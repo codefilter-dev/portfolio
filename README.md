@@ -4,7 +4,7 @@
 
 ### ● Full-Stack · Design · DevOps
 
-📍 Ho Chi Minh City, Vietnam · 🌐 **[View Portfolio](https://codefilter.dev)**
+📍 Ho Chi Minh City, Vietnam · 🌐 **[View Portfolio](https://codefilter-org.github.io/portfolio/)**
 
 **We Build. We Deploy. We Scale.**
 
