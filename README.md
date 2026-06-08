@@ -28,13 +28,13 @@ We also **maintain & support existing projects** — bug fixes, feature upgrades
 |---|---|---|
 | **Ms. Kate** | Manager | Project Management · Stakeholder Communication · Requirement Analysis · Delivery Planning |
 | **Mr. Jack** | UI/UX Designer | UI Design · UX Research · Figma · Prototyping |
-| **Mr. Hoang** | Tech Lead & Senior Engineer | Lambda · NestJS · Vue 3 · Docker · CI/CD · AWS · Nginx |
+| **Mr. Leo** | Tech Lead & Senior Engineer | Lambda · NestJS · Vue 3 · Docker · CI/CD · AWS · Nginx |
 
 ### Engineering Team
 
 | Name | Role |
 |---|---|
-| Mr. A | Full-Stack Engineer |
+| Felix C | Full-Stack Engineer |
 | Mr. B | Full-Stack Engineer |
 | + more | Scales with your project |
 
