@@ -1,455 +1,687 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>codeFilter — Full-Stack &amp; DevOps Team</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23e11d48'/><text y='.9em' font-size='62' font-family='sans-serif' font-weight='bold' fill='white' x='50%' text-anchor='middle' dominant-baseline='hanging' dy='10'>C</text></svg>" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23e11d48'/><text y='.9em' font-size='62' font-family='sans-serif' font-weight='bold' fill='white' x='50%' text-anchor='middle' dominant-baseline='hanging' dy='10'>C</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-<!-- ─── NAV ─── -->
-<nav>
-  <div class="nav-logo">code<span>Filter</span></div>
-  <ul>
-    <li><a href="#team">Team</a></li>
-    <li><a href="#process">Process</a></li>
-    <li><a href="#stack">Tech Stack</a></li>
-    <li><a href="#testing">Testing</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+  <!-- ─── NAV ─── -->
+  <nav>
+    <div class="nav-logo">code<span>Filter</span></div>
+    <ul>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#stack">Tech Stack</a></li>
+      <li><a href="#testing">Testing</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-<!-- ─── HERO ─── -->
-<section class="hero">
-  <div class="hero-grid"></div>
-  <div class="hero-glow"></div>
-  <div class="hero-content fade-in">
-    <div class="hero-badge">Full-Stack · Design · DevOps</div>
-    <div class="hero-location">📍 Ho Chi Minh City, Vietnam</div>
-    <h1>
-      We Build.<br/>
-      <span class="line-accent">We Deploy.</span><br/>
-      <span class="line-green">We Scale.</span>
-    </h1>
-    <p class="hero-slogan">We filter complexity and deliver simplicity.</p>
-    <p>
-      End-to-end software delivery — UI/UX design, Node.js APIs, Vue frontends, and fully automated AWS infrastructure.
-    </p>
-    <div class="hero-cta">
-      <a href="#team" class="btn btn-primary">Meet the Team</a>
-      <a href="#process" class="btn btn-ghost">Our Process</a>
-    </div>
-    <!-- <div class="hero-mottos">
+  <!-- ─── HERO ─── -->
+  <section class="hero">
+    <canvas id="hero-particles"></canvas>
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-content fade-in">
+      <div class="hero-badge">Full-Stack · Design · DevOps</div>
+      <div class="hero-location">📍 Ho Chi Minh City, Vietnam</div>
+      <h1>
+        We Build.<br />
+        <span class="line-accent">We Deploy.</span><br />
+        <span class="line-green">We Scale.</span>
+      </h1>
+      <p class="hero-slogan">We filter complexity and deliver simplicity.</p>
+      <p>
+        End-to-end software delivery — UI/UX design, Node.js APIs, Vue frontends, and fully automated AWS
+        infrastructure.
+      </p>
+      <div class="hero-cta">
+        <a href="#team" class="btn btn-primary">Meet the Team</a>
+        <a href="#process" class="btn btn-ghost">Our Process</a>
+      </div>
+      <!-- <div class="hero-mottos">
       <span class="motto-tag speed">Fast</span>
       <span class="motto-tag quality">Quality</span>
       <span class="motto-tag security">Secure</span>
     </div> -->
-  </div>
-</section>
-
-<!-- ─── STATS ─── -->
-<div class="stats-bar">
-  <div class="stat fade-in">
-    <div class="stat-num">20+</div>
-    <div class="stat-label">AWS Services</div>
-  </div>
-  <div class="stat fade-in">
-    <div class="stat-num">3</div>
-    <div class="stat-label">Test Frameworks</div>
-  </div>
-  <div class="stat fade-in">
-    <div class="stat-num">TS</div>
-    <div class="stat-label">TypeScript First</div>
-  </div>
-  <div class="stat fade-in">
-    <div class="stat-num">Vue</div>
-    <div class="stat-label">Frontend Stack</div>
-  </div>
-</div>
-
-<!-- ─── STATS ─── -->
-<section id="team">
-  <div class="container">
-    <div class="section-header fade-in">
-      <div class="section-label">// our crew</div>
-      <h2 class="section-title">Meet the Team</h2>
-      <p class="section-sub">Led by 3 core members, backed by a team of full-stack engineers.</p>
     </div>
-    <div class="team-grid team-leads">
+  </section>
 
-      <!-- LEAD -->
-      <div class="member-card lead fade-in">
-        <div class="avatar">KD</div>
-        <div class="member-name">Ms. Kate</div>
-        <div class="member-role">Manager</div>
-        <p class="member-desc">Bridges clients and the team — from requirements to delivery.</p>
-        <div class="member-skills">
-          <span class="skill-tag">Project Management</span>
-          <span class="skill-tag">Stakeholder Communication</span>
-          <span class="skill-tag">Requirement Analysis</span>
-          <span class="skill-tag">Delivery Planning</span>
-        </div>
-      </div>
-
-      <!-- UI/UX -->
-      <div class="member-card middle fade-in">
-        <div class="avatar">JN</div>
-        <div class="member-name">Mr. Jack</div>
-        <div class="member-role">UI/UX Designer</div>
-        <p class="member-desc">Crafts intuitive interfaces and seamless user experiences.</p>
-        <div class="member-skills">
-          <span class="skill-tag">UI Design</span>
-          <span class="skill-tag">UX Research</span>
-          <span class="skill-tag">Figma</span>
-          <span class="skill-tag">Prototyping</span>
-        </div>
-      </div>
-
-      <!-- SENIOR -->
-      <div class="member-card senior fade-in">
-        <div class="avatar">LP</div>
-        <div class="member-name">Mr. Leo</div>
-        <div class="member-role">Tech Lead &amp; Senior Engineer</div>
-        <p class="member-desc">Tech decisions, architecture, backend systems &amp; DevOps pipelines.</p>
-        <div class="member-skills">
-          <span class="skill-tag">Lambda</span>
-          <span class="skill-tag">NestJS</span>
-          <span class="skill-tag">Vue 3</span>
-          <span class="skill-tag">Docker</span>
-          <span class="skill-tag">CI/CD</span>
-          <span class="skill-tag">AWS</span>
-          <span class="skill-tag">Nginx</span>
-        </div>
-      </div>
-
+  <!-- ─── STATS ─── -->
+  <div class="stats-bar">
+    <div class="stat fade-in">
+      <div class="stat-num">20+</div>
+      <div class="stat-label">AWS Services</div>
     </div>
+    <div class="stat fade-in">
+      <div class="stat-num">3</div>
+      <div class="stat-label">Test Frameworks</div>
+    </div>
+    <div class="stat fade-in">
+      <div class="stat-num">TS</div>
+      <div class="stat-label">TypeScript First</div>
+    </div>
+    <div class="stat fade-in">
+      <div class="stat-num">Vue</div>
+      <div class="stat-label">Frontend Stack</div>
+    </div>
+  </div>
 
-    <!-- Extended team -->
-    <div class="team-extended fade-in">
-      <div class="team-extended-label">Engineering Team</div>
-      <div class="team-extended-grid">
-        <div class="member-mini">
-          <div class="avatar-mini">FC</div>
-          <div>
-            <div class="member-mini-name">Felix C</div>
-            <div class="member-mini-role">Full-Stack Engineer</div>
+  <!-- ─── STATS ─── -->
+  <section id="team">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-label">// our crew</div>
+        <h2 class="section-title">Meet the Team</h2>
+        <p class="section-sub">Led by 3 core members, backed by a team of full-stack engineers.</p>
+      </div>
+      <div class="team-grid team-leads">
+
+        <!-- LEAD -->
+        <div class="member-card lead fade-in">
+          <img src="images/kate.png" alt="Ms. Kate" class="avatar" />
+          <div class="member-name">Ms. Kate</div>
+          <div class="member-role">Manager</div>
+          <p class="member-desc">Bridges clients and the team — from requirements to delivery.</p>
+          <div class="member-skills">
+            <span class="skill-tag">Project Management</span>
+            <span class="skill-tag">Stakeholder Communication</span>
+            <span class="skill-tag">Requirement Analysis</span>
+            <span class="skill-tag">Delivery Planning</span>
           </div>
         </div>
-        <div class="member-mini">
-          <div class="avatar-mini">B</div>
-          <div>
-            <div class="member-mini-name">Mr. B</div>
-            <div class="member-mini-role">Full-Stack Engineer</div>
+
+        <!-- SENIOR -->
+        <div class="member-card senior fade-in">
+          <img src="images/leo.png" alt="Mr. Leo" class="avatar" />
+          <div class="member-name">Mr. Leo</div>
+          <div class="member-role">Tech Lead &amp; Senior Engineer</div>
+          <p class="member-desc">Tech decisions, architecture, backend systems &amp; DevOps pipelines.</p>
+          <div class="member-skills">
+            <span class="skill-tag">Lambda</span>
+            <span class="skill-tag">NestJS</span>
+            <span class="skill-tag">Vue 3</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">CI/CD</span>
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">Nginx</span>
           </div>
         </div>
-        <div class="member-mini more">
-          <div class="avatar-mini">+</div>
-          <div>
-            <div class="member-mini-name">& more</div>
-            <div class="member-mini-role">Scales with your project</div>
+
+        <!-- UI/UX -->
+        <div class="member-card middle fade-in">
+          <img src="images/jack.png" alt="Mr. Jack" class="avatar" />
+          <div class="member-name">Mr. Jack</div>
+          <div class="member-role">UI/UX Designer</div>
+          <p class="member-desc">Crafts intuitive interfaces and seamless user experiences.</p>
+          <div class="member-skills">
+            <span class="skill-tag">UI Crafter</span>
+            <span class="skill-tag">UX Research</span>
+            <span class="skill-tag">Userflow</span>
+            <span class="skill-tag">Prototyping</span>
+            <span class="skill-tag">Design Ops</span>
+            <span class="skill-tag">Design Audit</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Extended team -->
+      <div class="team-extended fade-in">
+        <div class="team-extended-label">Engineering Team</div>
+        <div class="team-extended-grid">
+          <div class="member-mini">
+            <img src="images/felix.png" alt="Mr. Felix" class="avatar-mini" />
+            <div>
+              <div class="member-mini-name">Mr. Felix</div>
+              <div class="member-mini-role">Full-Stack Engineer</div>
+            </div>
+          </div>
+          <div class="member-mini">
+            <img src="images/lyla.png" alt="Ms. Lyla" class="avatar-mini" />
+            <div>
+              <div class="member-mini-name">Ms. Lyla</div>
+              <div class="member-mini-role">Full-Stack Engineer</div>
+            </div>
+          </div>
+          <div class="member-mini more">
+            <div class="avatar-mini">+</div>
+            <div>
+              <div class="member-mini-name">& more</div>
+              <div class="member-mini-role">Scales with your project</div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ─── PROCESS ─── -->
-<section id="process">
-  <div class="container">
-    <div class="section-header fade-in">
-      <div class="section-label">// how we work</div>
-      <h2 class="section-title">Our Process</h2>
-      <p class="section-sub">From first call to production — a clear path every time.</p>
-    </div>
-    <div class="process-track">
+  <!-- ─── PROCESS ─── -->
+  <section id="process">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-label">// how we work</div>
+        <h2 class="section-title">Our Process</h2>
+        <p class="section-sub">From first call to production — a clear path every time.</p>
+      </div>
+      <div class="process-track">
 
-      <div class="process-step fade-in">
-        <div class="process-num">01</div>
-        <div class="process-body">
-          <div class="process-title">Requirement Gathering</div>
-        </div>
-      </div>
-
-      <div class="process-step fade-in">
-        <div class="process-num">02</div>
-        <div class="process-body">
-          <div class="process-title">Design</div>
-        </div>
-      </div>
-
-      <div class="process-step fade-in">
-        <div class="process-num">03</div>
-        <div class="process-body">
-          <div class="process-title">Development &amp; Testing</div>
-        </div>
-      </div>
-
-      <div class="process-step fade-in">
-        <div class="process-num">04</div>
-        <div class="process-body">
-          <div class="process-title">QA &amp; Feedback</div>
-        </div>
-      </div>
-
-      <div class="process-step fade-in">
-        <div class="process-num">05</div>
-        <div class="process-body">
-          <div class="process-title">Go Live</div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ─── TECH STACK ─── -->
-<section id="stack">
-  <div class="container">
-    <div class="section-header fade-in">
-      <div class="section-label">// tools of the trade</div>
-      <h2 class="section-title">Tech Stack</h2>
-      <p class="section-sub">Full-stack, cloud-native, and battle-tested.</p>
-    </div>
-
-    <div class="stack-categories">
-
-      <div class="fade-in">
-        <div class="stack-category-title">Backend &amp; Runtime</div>
-        <div class="tech-row">
-          <div class="tech-pill"><span class="dot dot-green"></span>Node.js</div>
-          <div class="tech-pill"><span class="dot dot-blue"></span>TypeScript</div>
-          <div class="tech-pill"><span class="dot dot-red"></span>NestJS</div>
-          <div class="tech-pill"><span class="dot dot-green"></span>Express.js</div>
-          <div class="tech-pill"><span class="dot dot-purple"></span>GraphQL</div>
-          <div class="tech-pill"><span class="dot dot-blue"></span>Prisma ORM</div>
-          <div class="tech-pill"><span class="dot dot-blue"></span>Drizzle ORM</div>
-        </div>
-      </div>
-
-      <div class="fade-in">
-        <div class="stack-category-title">Frontend</div>
-        <div class="tech-row">
-          <div class="tech-pill"><span class="dot dot-green"></span>Vue 3</div>
-          <div class="tech-pill"><span class="dot dot-yellow"></span>Vite</div>
-          <div class="tech-pill"><span class="dot dot-blue"></span>TypeScript</div>
-          <div class="tech-pill"><span class="dot dot-cyan"></span>Vue Router</div>
-          <div class="tech-pill"><span class="dot dot-orange"></span>Tailwind CSS</div>
-        </div>
-      </div>
-
-      <div class="fade-in">
-        <div class="stack-category-title">DevOps &amp; Infrastructure</div>
-        <div class="tech-row">
-          <div class="tech-pill"><span class="dot dot-blue"></span>Docker</div>
-          <div class="tech-pill"><span class="dot dot-orange"></span>Terraform</div>
-          <div class="tech-pill"><span class="dot dot-purple"></span>GitHub Actions</div>
-          <div class="tech-pill"><span class="dot dot-blue"></span>AWS CDK</div>
-          <div class="tech-pill"><span class="dot dot-green"></span>Nginx</div>
-        </div>
-      </div>
-
-      <div class="fade-in">
-        <div class="stack-category-title">Databases &amp; Messaging</div>
-        <div class="tech-row">
-          <div class="tech-pill"><span class="dot dot-blue"></span>PostgreSQL (RDS)</div>
-          <div class="tech-pill"><span class="dot dot-red"></span>Redis (ElastiCache)</div>
-          <div class="tech-pill"><span class="dot dot-yellow"></span>DynamoDB</div>
-          <div class="tech-pill"><span class="dot dot-orange"></span>SQS</div>
-          <div class="tech-pill"><span class="dot dot-purple"></span>SNS</div>
-          <div class="tech-pill"><span class="dot dot-cyan"></span>EventBridge</div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- AWS Services -->
-    <div class="section-header fade-in" style="margin-top: 4rem; margin-bottom: 2rem;">
-      <div class="section-label">// cloud provider</div>
-      <h2 class="section-title" style="font-size: 1.8rem;">AWS Services We Use</h2>
-    </div>
-    <div class="aws-grid fade-in">
-      <div class="aws-card">
-        <div class="aws-icon">🔥</div>
-        <div class="aws-name">Lambda</div>
-        <div class="aws-desc">Serverless compute</div>
-      </div>
-      <div class="aws-card">
-        <div class="aws-icon">🔀</div>
-        <div class="aws-name">API Gateway</div>
-        <div class="aws-desc">REST &amp; HTTP APIs</div>
-      </div>
-      <div class="aws-card">
-        <div class="aws-icon">💻</div>
-        <div class="aws-name">EC2</div>
-        <div class="aws-desc">Virtual servers</div>
-      </div>
-      <div class="aws-card">
-        <div class="aws-icon">🫙</div>
-        <div class="aws-name">ECS / Fargate</div>
-        <div class="aws-desc">Container orchestration</div>
-      </div>
-      <div class="aws-card">
-        <div class="aws-icon">⚖️</div>
-        <div class="aws-name">ALB</div>
-        <div class="aws-desc">Load balancing</div>
-      </div>
-      <div class="aws-card">
-        <div class="aws-icon">🪣</div>
-        <div class="aws-name">S3</div>
-        <div class="aws-desc">Object storage</div>
-      </div>
-      <div class="aws-card">
-        <div class="aws-icon">🌩️</div>
-        <div class="aws-name">CloudFront</div>
-        <div class="aws-desc">CDN &amp; edge delivery</div>
-      </div>
-      <div class="aws-card">
-        <div class="aws-icon">📡</div>
-        <div class="aws-name">Amplify</div>
-        <div class="aws-desc">Frontend hosting &amp; CI</div>
-      </div>
-      <div class="aws-card">
-        <div class="aws-icon">🐘</div>
-        <div class="aws-name">RDS</div>
-        <div class="aws-desc">Managed databases</div>
-      </div>
-      <div class="aws-card">
-        <div class="aws-icon">👤</div>
-        <div class="aws-name">Cognito</div>
-        <div class="aws-desc">Auth &amp; user pools</div>
-      </div>
-      <div class="aws-card">
-        <div class="aws-icon">🎭</div>
-        <div class="aws-name">IAM</div>
-        <div class="aws-desc">Access management</div>
-      </div>
-      <div class="aws-card">
-        <div class="aws-icon">🤫</div>
-        <div class="aws-name">Secrets Manager</div>
-        <div class="aws-desc">Secure secrets storage</div>
-      </div>
-      <div class="aws-card">
-        <div class="aws-icon">📈</div>
-        <div class="aws-name">CloudWatch</div>
-        <div class="aws-desc">Logs &amp; metrics</div>
-      </div>
-      <div class="aws-card">
-        <div class="aws-icon">💬</div>
-        <div class="aws-name">SQS / SNS</div>
-        <div class="aws-desc">Async messaging</div>
-      </div>
-      <div class="aws-card">
-        <div class="aws-icon">🧭</div>
-        <div class="aws-name">Route 53</div>
-        <div class="aws-desc">DNS management</div>
-      </div>
-      <div class="aws-card">
-        <div class="aws-icon">🛡️</div>
-        <div class="aws-name">WAF &amp; Shield</div>
-        <div class="aws-desc">Security &amp; DDoS</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ─── TESTING ─── -->
-<section id="testing">
-  <div class="container">
-    <div class="section-header fade-in">
-      <div class="section-label">// quality assurance</div>
-      <h2 class="section-title">Quality Assurance</h2>
-      <p class="section-sub">Every feature ships with confidence — automated and manually verified.</p>
-    </div>
-    <div class="testing-grid">
-
-      <div class="test-card fade-in">
-        <div class="test-header">
-          <div class="test-icon" style="background: rgba(255,200,55,.12); color: #ffc837;">⚡</div>
-          <div>
-            <div class="test-name">Automation Testing</div>
-            <div class="test-type">Unit · Integration · End-to-End</div>
+        <div class="process-step fade-in">
+          <div class="process-num">01</div>
+          <div class="process-body">
+            <div class="process-title">Requirement Gathering</div>
           </div>
         </div>
-        <p class="test-desc">
-          We write automated tests at every layer — from isolated unit tests and API integration suites to full end-to-end browser flows. Tests run automatically on every push via CI/CD.
+
+        <div class="process-step fade-in">
+          <div class="process-num">02</div>
+          <div class="process-body">
+            <div class="process-title">Design</div>
+          </div>
+        </div>
+
+        <div class="process-step fade-in">
+          <div class="process-num">03</div>
+          <div class="process-body">
+            <div class="process-title">Development &amp; Testing</div>
+          </div>
+        </div>
+
+        <div class="process-step fade-in">
+          <div class="process-num">04</div>
+          <div class="process-body">
+            <div class="process-title">QA &amp; Feedback</div>
+          </div>
+        </div>
+
+        <div class="process-step fade-in">
+          <div class="process-num">05</div>
+          <div class="process-body">
+            <div class="process-title">Go Live</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── TECH STACK ─── -->
+  <section id="stack">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-label">// tools of the trade</div>
+        <h2 class="section-title">Tech Stack</h2>
+        <p class="section-sub">Full-stack, cloud-native, and battle-tested.</p>
+      </div>
+
+      <div class="stack-categories">
+
+        <div class="fade-in">
+          <div class="stack-category-title">Backend &amp; Runtime</div>
+          <div class="tech-row">
+            <div class="tech-pill"><span class="dot dot-green"></span>Node.js</div>
+            <div class="tech-pill"><span class="dot dot-blue"></span>TypeScript</div>
+            <div class="tech-pill"><span class="dot dot-red"></span>NestJS</div>
+            <div class="tech-pill"><span class="dot dot-green"></span>Express.js</div>
+            <div class="tech-pill"><span class="dot dot-purple"></span>GraphQL</div>
+            <div class="tech-pill"><span class="dot dot-blue"></span>Prisma ORM</div>
+            <div class="tech-pill"><span class="dot dot-blue"></span>Drizzle ORM</div>
+          </div>
+        </div>
+
+        <div class="fade-in">
+          <div class="stack-category-title">Frontend</div>
+          <div class="tech-row">
+            <div class="tech-pill"><span class="dot dot-green"></span>Vue 3</div>
+            <div class="tech-pill"><span class="dot dot-yellow"></span>Vite</div>
+            <div class="tech-pill"><span class="dot dot-blue"></span>TypeScript</div>
+            <div class="tech-pill"><span class="dot dot-cyan"></span>Vue Router</div>
+            <div class="tech-pill"><span class="dot dot-orange"></span>Tailwind CSS</div>
+          </div>
+        </div>
+
+        <div class="fade-in">
+          <div class="stack-category-title">DevOps &amp; Infrastructure</div>
+          <div class="tech-row">
+            <div class="tech-pill"><span class="dot dot-blue"></span>Docker</div>
+            <div class="tech-pill"><span class="dot dot-orange"></span>Terraform</div>
+            <div class="tech-pill"><span class="dot dot-purple"></span>GitHub Actions</div>
+            <div class="tech-pill"><span class="dot dot-blue"></span>AWS CDK</div>
+            <div class="tech-pill"><span class="dot dot-green"></span>Nginx</div>
+          </div>
+        </div>
+
+        <div class="fade-in">
+          <div class="stack-category-title">Databases &amp; Messaging</div>
+          <div class="tech-row">
+            <div class="tech-pill"><span class="dot dot-blue"></span>PostgreSQL (RDS)</div>
+            <div class="tech-pill"><span class="dot dot-red"></span>Redis (ElastiCache)</div>
+            <div class="tech-pill"><span class="dot dot-yellow"></span>DynamoDB</div>
+            <div class="tech-pill"><span class="dot dot-orange"></span>SQS</div>
+            <div class="tech-pill"><span class="dot dot-purple"></span>SNS</div>
+            <div class="tech-pill"><span class="dot dot-cyan"></span>EventBridge</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- AWS Services -->
+      <div class="section-header fade-in" style="margin-top: 4rem; margin-bottom: 2rem;">
+        <div class="section-label">// cloud provider</div>
+        <h2 class="section-title" style="font-size: 1.8rem;">AWS Services We Use</h2>
+      </div>
+      <div class="aws-grid fade-in">
+        <div class="aws-card">
+          <div class="aws-icon">🔥</div>
+          <div class="aws-name">Lambda</div>
+          <div class="aws-desc">Serverless compute</div>
+        </div>
+        <div class="aws-card">
+          <div class="aws-icon">🔀</div>
+          <div class="aws-name">API Gateway</div>
+          <div class="aws-desc">REST &amp; HTTP APIs</div>
+        </div>
+        <div class="aws-card">
+          <div class="aws-icon">💻</div>
+          <div class="aws-name">EC2</div>
+          <div class="aws-desc">Virtual servers</div>
+        </div>
+        <div class="aws-card">
+          <div class="aws-icon">🫙</div>
+          <div class="aws-name">ECS / Fargate</div>
+          <div class="aws-desc">Container orchestration</div>
+        </div>
+        <div class="aws-card">
+          <div class="aws-icon">⚖️</div>
+          <div class="aws-name">ALB</div>
+          <div class="aws-desc">Load balancing</div>
+        </div>
+        <div class="aws-card">
+          <div class="aws-icon">🪣</div>
+          <div class="aws-name">S3</div>
+          <div class="aws-desc">Object storage</div>
+        </div>
+        <div class="aws-card">
+          <div class="aws-icon">🌩️</div>
+          <div class="aws-name">CloudFront</div>
+          <div class="aws-desc">CDN &amp; edge delivery</div>
+        </div>
+        <div class="aws-card">
+          <div class="aws-icon">📡</div>
+          <div class="aws-name">Amplify</div>
+          <div class="aws-desc">Frontend hosting &amp; CI</div>
+        </div>
+        <div class="aws-card">
+          <div class="aws-icon">🐘</div>
+          <div class="aws-name">RDS</div>
+          <div class="aws-desc">Managed databases</div>
+        </div>
+        <div class="aws-card">
+          <div class="aws-icon">👤</div>
+          <div class="aws-name">Cognito</div>
+          <div class="aws-desc">Auth &amp; user pools</div>
+        </div>
+        <div class="aws-card">
+          <div class="aws-icon">🎭</div>
+          <div class="aws-name">IAM</div>
+          <div class="aws-desc">Access management</div>
+        </div>
+        <div class="aws-card">
+          <div class="aws-icon">🤫</div>
+          <div class="aws-name">Secrets Manager</div>
+          <div class="aws-desc">Secure secrets storage</div>
+        </div>
+        <div class="aws-card">
+          <div class="aws-icon">📈</div>
+          <div class="aws-name">CloudWatch</div>
+          <div class="aws-desc">Logs &amp; metrics</div>
+        </div>
+        <div class="aws-card">
+          <div class="aws-icon">💬</div>
+          <div class="aws-name">SQS / SNS</div>
+          <div class="aws-desc">Async messaging</div>
+        </div>
+        <div class="aws-card">
+          <div class="aws-icon">🧭</div>
+          <div class="aws-name">Route 53</div>
+          <div class="aws-desc">DNS management</div>
+        </div>
+        <div class="aws-card">
+          <div class="aws-icon">🛡️</div>
+          <div class="aws-name">WAF &amp; Shield</div>
+          <div class="aws-desc">Security &amp; DDoS</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── TESTING ─── -->
+  <section id="testing">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-label">// quality assurance</div>
+        <h2 class="section-title">Quality Assurance</h2>
+        <p class="section-sub">Every feature ships with confidence — automated and manually verified.</p>
+      </div>
+      <div class="testing-grid">
+
+        <div class="test-card fade-in">
+          <div class="test-header">
+            <div class="test-icon" style="background: rgba(255,200,55,.12); color: #ffc837;">⚡</div>
+            <div>
+              <div class="test-name">Automation Testing</div>
+              <div class="test-type">Unit · Integration · End-to-End</div>
+            </div>
+          </div>
+          <p class="test-desc">
+            We write automated tests at every layer — from isolated unit tests and API integration suites to full
+            end-to-end browser flows. Tests run automatically on every push via CI/CD.
+          </p>
+          <ul class="test-features">
+            <li>Unit &amp; integration tests for all core logic</li>
+            <li>End-to-end browser automation</li>
+            <li>Coverage reports on every build</li>
+            <li>CI integration with GitHub Actions</li>
+          </ul>
+        </div>
+
+        <div class="test-card fade-in">
+          <div class="test-header">
+            <div class="test-icon" style="background: rgba(45,212,191,.12); color: #2dd4bf;">🔍</div>
+            <div>
+              <div class="test-name">Manual Testing</div>
+              <div class="test-type">Functional · UX · Regression</div>
+            </div>
+          </div>
+          <p class="test-desc">
+            Automated tests catch bugs — manual testing catches everything else. Our QA process includes exploratory,
+            functional, and UX testing before every release.
+          </p>
+          <ul class="test-features">
+            <li>Functional &amp; regression testing</li>
+            <li>UX &amp; usability review</li>
+            <li>Cross-browser &amp; cross-device checks</li>
+            <li>Bug triage &amp; sign-off before go-live</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-box fade-in">
+        <h3>Let's Build Together</h3>
+        <p>Have a project in mind? Whether it's a scalable API, a cloud migration, or a full product — we're ready.</p>
+        <p style="color: var(--muted); font-size: .875rem; margin-top: -.75rem; margin-bottom: 2rem;">
+          We take on projects of <strong style="color: var(--text);">all sizes</strong> — from a quick MVP to a
+          large-scale system. No project is too big or too small.
         </p>
-        <ul class="test-features">
-          <li>Unit &amp; integration tests for all core logic</li>
-          <li>End-to-end browser automation</li>
-          <li>Coverage reports on every build</li>
-          <li>CI integration with GitHub Actions</li>
-        </ul>
-      </div>
-
-      <div class="test-card fade-in">
-        <div class="test-header">
-          <div class="test-icon" style="background: rgba(45,212,191,.12); color: #2dd4bf;">🔍</div>
-          <div>
-            <div class="test-name">Manual Testing</div>
-            <div class="test-type">Functional · UX · Regression</div>
-          </div>
-        </div>
-        <p class="test-desc">
-          Automated tests catch bugs — manual testing catches everything else. Our QA process includes exploratory, functional, and UX testing before every release.
+        <p style="color: var(--muted); font-size: .875rem; margin-top: -.75rem; margin-bottom: 2rem;">
+          Not ready to build yet? We also offer <strong style="color: var(--text);">standalone UI/UX design</strong> —
+          wireframes, prototypes, and full Figma specs. No dev work required.
         </p>
-        <ul class="test-features">
-          <li>Functional &amp; regression testing</li>
-          <li>UX &amp; usability review</li>
-          <li>Cross-browser &amp; cross-device checks</li>
-          <li>Bug triage &amp; sign-off before go-live</li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ─── CONTACT ─── -->
-<section id="contact">
-  <div class="container">
-    <div class="contact-box fade-in">
-      <h3>Let's Build Together</h3>
-      <p>Have a project in mind? Whether it's a scalable API, a cloud migration, or a full product — we're ready.</p>
-      <p style="color: var(--muted); font-size: .875rem; margin-top: -.75rem; margin-bottom: 2rem;">
-        We take on projects of <strong style="color: var(--text);">all sizes</strong> — from a quick MVP to a large-scale system. No project is too big or too small.
-      </p>
-      <p style="color: var(--muted); font-size: .875rem; margin-top: -.75rem; margin-bottom: 2rem;">
-        Not ready to build yet? We also offer <strong style="color: var(--text);">standalone UI/UX design</strong> — wireframes, prototypes, and full Figma specs. No dev work required.
-      </p>
-      <div class="contact-links">
-        <a href="mailto:contact@codefilter.dev" class="contact-link">
-          <span>✉️</span> contact@codefilter.dev
-        </a>
+        <div class="contact-links">
+          <a href="/cdn-cgi/l/email-protection#36555958425755427655595253505f5a42534418525340" class="contact-link">
+            <span>✉️</span> <span class="__cf_email__" data-cfemail="8fece0e1fbeeecfbcfece0ebeae9e6e3fbeafda1ebeaf9">[email&#160;protected]</span>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ─── FOOTER ─── -->
-<footer>
-  <p>Built with <span>♥</span> by codeFilter &nbsp;·&nbsp; Full-Stack · DevOps · AWS &nbsp;·&nbsp; © 2026</p>
-</footer>
+  <!-- ─── FOOTER ─── -->
+  <footer>
+    <p>Built with <span>♥</span> by codeFilter &nbsp;·&nbsp; Full-Stack · DevOps · AWS &nbsp;·&nbsp; © 2026</p>
+  </footer>
 
-<script>
-  // Intersection Observer for fade-in animations
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    // Intersection Observer for fade-in animations
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    );
+
+    document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
+  </script>
+
+  <!-- ─── NEON GRID LINES ─── -->
+  <script>
+    (function () {
+      const canvas = document.getElementById('hero-particles');
+      const ctx = canvas.getContext('2d');
+
+      const GRID = 48;          // must match .hero-grid background-size
+      const COUNT = 14;         // number of neon runners
+      const TRAIL = 48;         // trail length (points)
+      const FRAME_MS = 33;      // ~30fps cap (lighter on weak GPUs)
+      const BASE_SPEED = 0.024; // cells per frame
+      const COLORS = ['#e11d48', '#ff2d75', '#c026d3', '#7c3aed', '#f97316'];
+      const DIRS = [[1, 0], [-1, 0], [0, 1], [0, -1]];
+
+      let width, height, cols, rows;
+      let runners = [];
+      const activeLights = new Map();
+      let animationId = null;
+
+      function resize() {
+        const hero = canvas.closest('.hero');
+        width = canvas.width = hero.offsetWidth;
+        height = canvas.height = hero.offsetHeight;
+        cols = Math.ceil(width / GRID);
+        rows = Math.ceil(height / GRID);
+
+        activeLights.clear();
+      }
+
+      function inBounds(gx, gy) {
+        return gx >= 0 && gx <= cols && gy >= 0 && gy <= rows;
+      }
+
+      // Spawn a runner heading inward from a random point on the grid edge
+      function spawn() {
+        const edge = (Math.random() * 4) | 0;
+        let gx, gy, d;
+        if (edge === 0) { gx = 0;    gy = (Math.random() * (rows + 1)) | 0; d = [1, 0]; }
+        else if (edge === 1) { gx = cols; gy = (Math.random() * (rows + 1)) | 0; d = [-1, 0]; }
+        else if (edge === 2) { gx = (Math.random() * (cols + 1)) | 0; gy = 0;    d = [0, 1]; }
+        else { gx = (Math.random() * (cols + 1)) | 0; gy = rows; d = [0, -1]; }
+        return {
+          gx, gy, dir: d, tx: gx + d[0], ty: gy + d[1], t: 0,
+          speed: BASE_SPEED * (0.55 + Math.random() * 1.05),
+          color: COLORS[(Math.random() * COLORS.length) | 0],
+          trail: []
+        };
+      }
+
+      // At an intersection, pick a direction: keep going straight (weighted) or turn; never reverse
+      function chooseDir(r) {
+        const back = [-r.dir[0], -r.dir[1]];
+        const opts = [];
+        for (const d of DIRS) {
+          if (d[0] === back[0] && d[1] === back[1]) continue;
+          if (!inBounds(r.gx + d[0], r.gy + d[1])) continue;
+          const straight = (d[0] === r.dir[0] && d[1] === r.dir[1]);
+          const w = straight ? 5 : 2;
+          for (let i = 0; i < w; i++) opts.push(d);
         }
-      });
-    },
-    { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
-  );
+        return opts.length ? opts[(Math.random() * opts.length) | 0] : null;
+      }
 
-  document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
-</script>
+      const COLOR_RGB = {
+        '#e11d48': '225,29,72',
+        '#ff2d75': '255,45,117',
+        '#c026d3': '192,38,211',
+        '#7c3aed': '124,58,237',
+        '#f97316': '249,115,22'
+      };
+
+      function lightCell(col, row, color, amount) {
+        if (col >= 0 && col < cols && row >= 0 && row < rows) {
+          const key = `${col},${row}`;
+          let cell = activeLights.get(key);
+          if (!cell) {
+            cell = { col, row, intensity: 0, color };
+            activeLights.set(key, cell);
+          }
+          cell.intensity = Math.min(1.0, cell.intensity + amount);
+          cell.color = color;
+        }
+      }
+
+      function update(i) {
+        const r = runners[i];
+        r.t += r.speed;
+        while (r.t >= 1) {
+          r.t -= 1;
+          r.gx = r.tx; r.gy = r.ty;
+          const d = chooseDir(r);
+          if (!d) { runners[i] = spawn(); return; }
+          r.dir = d; r.tx = r.gx + d[0]; r.ty = r.gy + d[1];
+        }
+        const cx = r.gx + (r.tx - r.gx) * r.t;
+        const cy = r.gy + (r.ty - r.gy) * r.t;
+
+        // Light up grid squares directly adjacent to the runner's path segment
+        const lightAmount = 0.08;
+        if (r.dir[0] !== 0) { // moving horizontally
+          const col = Math.floor(cx);
+          lightCell(col, r.gy - 1, r.color, lightAmount);
+          lightCell(col, r.gy, r.color, lightAmount);
+        } else { // moving vertically
+          const row = Math.floor(cy);
+          lightCell(r.gx - 1, row, r.color, lightAmount);
+          lightCell(r.gx, row, r.color, lightAmount);
+        }
+
+        const x = cx * GRID;
+        const y = cy * GRID;
+        r.trail.push(x, y);
+        if (r.trail.length > TRAIL * 2) r.trail.splice(0, 2);
+      }
+
+      // Cheap glow: NO shadowBlur. A wide faint pass + a few banded core
+      // strokes give the neon look with ~8 stroke calls per runner.
+      const BANDS = 6;
+      function draw(r) {
+        const tr = r.trail;
+        const n = tr.length / 2;
+        if (n < 2) return;
+        ctx.strokeStyle = r.color;
+        ctx.fillStyle = r.color;
+        ctx.lineCap = 'round';
+        ctx.lineJoin = 'round';
+
+        // soft glow — one wide, faint pass over the whole trail
+        ctx.globalAlpha = 0.10;
+        ctx.lineWidth = 4;
+        ctx.beginPath();
+        ctx.moveTo(tr[0], tr[1]);
+        for (let i = 1; i < n; i++) ctx.lineTo(tr[i * 2], tr[i * 2 + 1]);
+        ctx.stroke();
+
+        // bright core, faded tail-to-head across a handful of bands
+        for (let b = 0; b < BANDS; b++) {
+          const s = Math.floor(b * (n - 1) / BANDS);
+          const e = Math.floor((b + 1) * (n - 1) / BANDS);
+          if (e <= s) continue;
+          const a = (b + 1) / BANDS;
+          ctx.globalAlpha = a * 0.8;
+          ctx.lineWidth = 0.5 + a * 1.5;
+          ctx.beginPath();
+          ctx.moveTo(tr[s * 2], tr[s * 2 + 1]);
+          for (let i = s + 1; i <= e; i++) ctx.lineTo(tr[i * 2], tr[i * 2 + 1]);
+          ctx.stroke();
+        }
+
+        // head: faint halo + solid core (cheap, no blur)
+        const hx = tr[(n - 1) * 2], hy = tr[(n - 1) * 2 + 1];
+        ctx.globalAlpha = 0.22;
+        ctx.beginPath();
+        ctx.arc(hx, hy, 4, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.globalAlpha = 1;
+        ctx.beginPath();
+        ctx.arc(hx, hy, 1.6, 0, Math.PI * 2);
+        ctx.fill();
+      }
+
+      let lastTs = 0;
+      function frame(ts) {
+        animationId = requestAnimationFrame(frame);
+        if (ts - lastTs < FRAME_MS) return;   // throttle to ~30fps
+        lastTs = ts;
+
+        // Decay active grid cell lights
+        activeLights.forEach((cell, key) => {
+          cell.intensity *= 0.90;
+          if (cell.intensity < 0.01) {
+            activeLights.delete(key);
+          }
+        });
+
+        ctx.clearRect(0, 0, width, height);
+
+        // Render lit-up grid squares using high-performance rgba() fill styles
+        activeLights.forEach((cell) => {
+          const rgb = COLOR_RGB[cell.color] || '255,255,255';
+          ctx.fillStyle = `rgba(${rgb}, ${cell.intensity * 0.08})`;
+          ctx.fillRect(cell.col * GRID + 1, cell.row * GRID + 1, GRID - 1, GRID - 1);
+        });
+
+        for (let i = 0; i < runners.length; i++) update(i);
+        for (let i = 0; i < runners.length; i++) draw(runners[i]);
+      }
+
+      function start() {
+        if (!animationId) { lastTs = 0; animationId = requestAnimationFrame(frame); }
+      }
+
+      function init() {
+        resize();
+        runners = [];
+        for (let i = 0; i < COUNT; i++) {
+          const r = spawn();
+          // stagger so they don't all start on the same edge line
+          r.t = Math.random();
+          runners.push(r);
+        }
+        start();
+      }
+
+      const heroObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) { start(); }
+          else { cancelAnimationFrame(animationId); animationId = null; }
+        });
+      }, { threshold: 0 });
+
+      window.addEventListener('resize', () => { resize(); });
+
+      init();
+      heroObserver.observe(canvas.closest('.hero'));
+    })();
+  </script>
 
 </body>
+
 </html>
