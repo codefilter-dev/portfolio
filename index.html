@@ -5,10 +5,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>codeFilter — Full-Stack &amp; DevOps Team</title>
-  <link rel="icon" href="images/favicon.svg" />
+  <link rel="icon" href="images/favicon.svg?v=2" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Figtree:wght@400..700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -17,10 +18,11 @@
 
   <!-- ─── NAV ─── -->
   <nav>
-    <a href="#" class="nav-logo"><img src="images/logo.svg" alt="codeFilter" /></a>
+    <a href="#" class="nav-logo"><img src="images/logo.svg?v=2" alt="codeFilter" /></a>
     <ul>
       <li><a href="#team">Team</a></li>
       <li><a href="#process">Process</a></li>
+      <li><a href="#products">Products</a></li>
       <li><a href="#stack">Tech Stack</a></li>
       <li><a href="#testing">Testing</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -29,30 +31,48 @@
 
   <!-- ─── HERO ─── -->
   <section class="hero">
-    <canvas id="hero-particles"></canvas>
-    <div class="hero-grid"></div>
-    <div class="hero-glow"></div>
-    <div class="hero-content fade-in">
-      <div class="hero-badge">Full-Stack · Design · DevOps</div>
-      <h1>
-        We Build.<br />
-        <span class="line-accent">We Deploy.</span><br />
-        <span class="line-green">We Scale.</span>
-      </h1>
-      <p class="hero-slogan">We filter complexity and deliver simplicity.</p>
-      <p>
-        End-to-end software delivery — UI/UX design, Node.js APIs, Vue frontends, and fully automated AWS
-        infrastructure.
-      </p>
-      <div class="hero-cta">
-        <a href="#team" class="btn btn-primary">Meet the Team</a>
-        <a href="#process" class="btn btn-ghost">Our Process</a>
+    <div class="hero-content">
+      <div class="hero-copy fade-in">
+        <div class="hero-badge">Full-stack delivery team</div>
+        <h1>
+          Product engineering,
+          <span>from first review to production.</span>
+        </h1>
+        <p>
+          codeFilter builds focused web products, automation systems, and cloud infrastructure for teams that need
+          pragmatic software shipped cleanly.
+        </p>
+        <div class="hero-cta">
+          <a href="#products" class="btn btn-primary">Explore Products</a>
+          <a href="#process" class="btn btn-ghost">How We Work</a>
+        </div>
       </div>
-      <!-- <div class="hero-mottos">
-      <span class="motto-tag speed">Fast</span>
-      <span class="motto-tag quality">Quality</span>
-      <span class="motto-tag security">Secure</span>
-    </div> -->
+
+      <div class="hero-panel fade-in" aria-label="EasyMerge review preview">
+        <div class="panel-bar">
+          <span class="panel-dot"></span>
+          <span>EasyMerge Review</span>
+        </div>
+        <div class="review-card">
+          <div class="review-meta">
+            <span>acme-corp/payments-api</span>
+            <span class="review-status">Completed</span>
+          </div>
+          <h2>Add retry logic to Stripe webhook handler</h2>
+          <div class="code-window">
+            <div><span>42</span> const payload = await request.json()</div>
+            <div class="flagged"><span>43</span> await processWebhook(payload)</div>
+            <div><span>44</span> return { ok: true }</div>
+          </div>
+          <p class="review-note">
+            Missing retry handling can drop webhook events during transient provider errors.
+          </p>
+          <div class="review-foot">
+            <span>3 files reviewed</span>
+            <span>1 finding</span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -82,7 +102,7 @@
       <div class="section-header fade-in">
         <div class="section-label">// our crew</div>
         <h2 class="section-title">Meet the Team</h2>
-        <p class="section-sub">Led by 3 core members, backed by a team of full-stack engineers.</p>
+        <p class="section-sub">A focused team covering product, design, engineering, and delivery.</p>
       </div>
       <div class="team-grid team-leads">
 
@@ -133,34 +153,51 @@
           </div>
         </div>
 
-      </div>
-
-      <!-- Extended team -->
-      <div class="team-extended fade-in">
-        <div class="team-extended-label">Engineering Team</div>
-        <div class="team-extended-grid">
-          <div class="member-mini">
-            <img src="images/felix.png" alt="Mr. Felix" class="avatar-mini" />
-            <div>
-              <div class="member-mini-name">Mr. Felix</div>
-              <div class="member-mini-role">Full-Stack Engineer</div>
-            </div>
-          </div>
-          <div class="member-mini">
-            <img src="images/lyla.png" alt="Ms. Lyla" class="avatar-mini" />
-            <div>
-              <div class="member-mini-name">Ms. Lyla</div>
-              <div class="member-mini-role">Full-Stack Engineer</div>
-            </div>
-          </div>
-          <div class="member-mini more">
-            <div class="avatar-mini">+</div>
-            <div>
-              <div class="member-mini-name">& more</div>
-              <div class="member-mini-role">Scales with your project</div>
-            </div>
+        <!-- FULL-STACK -->
+        <div class="member-card fullstack-a fade-in">
+          <img src="images/felix.png" alt="Mr. Felix" class="avatar" />
+          <div class="member-name">Mr. Felix</div>
+          <div class="member-role">Full-Stack Engineer</div>
+          <p class="member-desc">Builds reliable application features across frontend, backend, and integrations.</p>
+          <div class="member-skills">
+            <span class="skill-tag">Vue 3</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">PostgreSQL</span>
           </div>
         </div>
+
+        <!-- FULL-STACK -->
+        <div class="member-card fullstack-b fade-in">
+          <img src="images/lyla.png" alt="Ms. Lyla" class="avatar" />
+          <div class="member-name">Ms. Lyla</div>
+          <div class="member-role">Full-Stack Engineer</div>
+          <p class="member-desc">Ships polished product workflows with careful attention to UI states and quality.</p>
+          <div class="member-skills">
+            <span class="skill-tag">Frontend</span>
+            <span class="skill-tag">NestJS</span>
+            <span class="skill-tag">Testing</span>
+            <span class="skill-tag">CI/CD</span>
+            <span class="skill-tag">AWS</span>
+          </div>
+        </div>
+
+        <!-- MORE MEMBERS -->
+        <div class="member-card more-members fade-in">
+          <div class="avatar">+</div>
+          <div class="member-name">More Members</div>
+          <div class="member-role">Engineering Team</div>
+          <p class="member-desc">Additional engineers join based on project scope, delivery timeline, and required expertise.</p>
+          <div class="member-skills">
+            <span class="skill-tag">Frontend</span>
+            <span class="skill-tag">Backend</span>
+            <span class="skill-tag">QA</span>
+            <span class="skill-tag">DevOps</span>
+            <span class="skill-tag">Support</span>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -215,6 +252,67 @@
           </div>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PRODUCTS & SERVICES ─── -->
+  <section id="products">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-label">// services &amp; products</div>
+        <h2 class="section-title">What We Build</h2>
+        <p class="section-sub">Client platforms, automation systems, and our own production tools.</p>
+      </div>
+
+      <div class="offerings-layout">
+        <article class="product-card product-featured fade-in">
+          <div class="product-kicker">Product</div>
+          <div class="product-topline">
+            <div>
+              <h3>EasyMerge</h3>
+              <p class="product-lede">AI-powered code review for GitHub teams.</p>
+            </div>
+            <div class="product-badge">Live</div>
+          </div>
+          <p class="product-desc">
+            EasyMerge connects to GitHub, reviews pull requests automatically, tracks review status across
+            repositories, and surfaces actionable findings in a focused dashboard.
+          </p>
+          <div class="product-highlights">
+            <span>GitHub App OAuth</span>
+            <span>Pull request review flow</span>
+            <span>Repository controls</span>
+            <span>Live review status</span>
+          </div>
+          <div class="product-actions">
+            <a href="https://app.ez-merge.com/" class="btn btn-primary" target="_blank" rel="noopener">Open App</a>
+            <a href="https://docs.ez-merge.com/" class="btn btn-ghost" target="_blank" rel="noopener">Read Docs</a>
+          </div>
+        </article>
+
+        <div class="service-grid">
+          <article class="service-card fade-in">
+            <div class="service-num">01</div>
+            <h3>Product Engineering</h3>
+            <p>From MVP to production SaaS: discovery, UX, frontend, backend APIs, and release-ready delivery.</p>
+          </article>
+          <article class="service-card fade-in">
+            <div class="service-num">02</div>
+            <h3>Automation &amp; Internal Tools</h3>
+            <p>Workflow dashboards, admin portals, integrations, and scripts that remove repetitive team work.</p>
+          </article>
+          <article class="service-card fade-in">
+            <div class="service-num">03</div>
+            <h3>Cloud &amp; DevOps</h3>
+            <p>AWS/GCP infrastructure, CI/CD pipelines, observability, deployments, and production operations.</p>
+          </article>
+          <article class="service-card fade-in">
+            <div class="service-num">04</div>
+            <h3>Design Systems</h3>
+            <p>Practical UI kits, responsive screens, usability reviews, and handoff specs for fast-moving teams.</p>
+          </article>
+        </div>
       </div>
     </div>
   </section>
@@ -277,97 +375,50 @@
           </div>
         </div>
 
-      </div>
+        <div class="fade-in">
+          <div class="stack-category-title">AWS Services</div>
+          <div class="tech-row tech-row-text">
+            <div class="tech-pill">Lambda</div>
+            <div class="tech-pill">API Gateway</div>
+            <div class="tech-pill">EC2</div>
+            <div class="tech-pill">ECS / Fargate</div>
+            <div class="tech-pill">ALB</div>
+            <div class="tech-pill">S3</div>
+            <div class="tech-pill">CloudFront</div>
+            <div class="tech-pill">Amplify</div>
+            <div class="tech-pill">RDS</div>
+            <div class="tech-pill">Cognito</div>
+            <div class="tech-pill">IAM</div>
+            <div class="tech-pill">Secrets Manager</div>
+            <div class="tech-pill">CloudWatch</div>
+            <div class="tech-pill">SQS / SNS</div>
+            <div class="tech-pill">Route 53</div>
+            <div class="tech-pill">WAF &amp; Shield</div>
+          </div>
+        </div>
 
-      <!-- AWS Services -->
-      <div class="section-header fade-in" style="margin-top: 4rem; margin-bottom: 2rem;">
-        <div class="section-label">// cloud provider</div>
-        <h2 class="section-title" style="font-size: 1.8rem;">AWS Services We Use</h2>
-      </div>
-      <div class="aws-source-list" style="display: none;">
-        <div class="aws-card">
-          <div class="aws-icon">🔥</div>
-          <div class="aws-name">Lambda</div>
-          <div class="aws-desc">Serverless compute</div>
+        <div class="fade-in">
+          <div class="stack-category-title">Google Cloud Services</div>
+          <div class="tech-row tech-row-text">
+            <div class="tech-pill">Cloud Run</div>
+            <div class="tech-pill">Cloud Functions</div>
+            <div class="tech-pill">Compute Engine</div>
+            <div class="tech-pill">GKE</div>
+            <div class="tech-pill">Cloud Load Balancing</div>
+            <div class="tech-pill">Cloud Storage</div>
+            <div class="tech-pill">Cloud CDN</div>
+            <div class="tech-pill">Cloud SQL</div>
+            <div class="tech-pill">Firestore</div>
+            <div class="tech-pill">Pub/Sub</div>
+            <div class="tech-pill">Cloud Scheduler</div>
+            <div class="tech-pill">Secret Manager</div>
+            <div class="tech-pill">Cloud Logging</div>
+            <div class="tech-pill">Cloud Monitoring</div>
+            <div class="tech-pill">IAM</div>
+            <div class="tech-pill">Cloud DNS</div>
+          </div>
         </div>
-        <div class="aws-card">
-          <div class="aws-icon">🔀</div>
-          <div class="aws-name">API Gateway</div>
-          <div class="aws-desc">REST &amp; HTTP APIs</div>
-        </div>
-        <div class="aws-card">
-          <div class="aws-icon">💻</div>
-          <div class="aws-name">EC2</div>
-          <div class="aws-desc">Virtual servers</div>
-        </div>
-        <div class="aws-card">
-          <div class="aws-icon">🫙</div>
-          <div class="aws-name">ECS / Fargate</div>
-          <div class="aws-desc">Container orchestration</div>
-        </div>
-        <div class="aws-card">
-          <div class="aws-icon">⚖️</div>
-          <div class="aws-name">ALB</div>
-          <div class="aws-desc">Load balancing</div>
-        </div>
-        <div class="aws-card">
-          <div class="aws-icon">🪣</div>
-          <div class="aws-name">S3</div>
-          <div class="aws-desc">Object storage</div>
-        </div>
-        <div class="aws-card">
-          <div class="aws-icon">🌩️</div>
-          <div class="aws-name">CloudFront</div>
-          <div class="aws-desc">CDN &amp; edge delivery</div>
-        </div>
-        <div class="aws-card">
-          <div class="aws-icon">📡</div>
-          <div class="aws-name">Amplify</div>
-          <div class="aws-desc">Frontend hosting &amp; CI</div>
-        </div>
-        <div class="aws-card">
-          <div class="aws-icon">🐘</div>
-          <div class="aws-name">RDS</div>
-          <div class="aws-desc">Managed databases</div>
-        </div>
-        <div class="aws-card">
-          <div class="aws-icon">👤</div>
-          <div class="aws-name">Cognito</div>
-          <div class="aws-desc">Auth &amp; user pools</div>
-        </div>
-        <div class="aws-card">
-          <div class="aws-icon">🎭</div>
-          <div class="aws-name">IAM</div>
-          <div class="aws-desc">Access management</div>
-        </div>
-        <div class="aws-card">
-          <div class="aws-icon">🤫</div>
-          <div class="aws-name">Secrets Manager</div>
-          <div class="aws-desc">Secure secrets storage</div>
-        </div>
-        <div class="aws-card">
-          <div class="aws-icon">📈</div>
-          <div class="aws-name">CloudWatch</div>
-          <div class="aws-desc">Logs &amp; metrics</div>
-        </div>
-        <div class="aws-card">
-          <div class="aws-icon">💬</div>
-          <div class="aws-name">SQS / SNS</div>
-          <div class="aws-desc">Async messaging</div>
-        </div>
-        <div class="aws-card">
-          <div class="aws-icon">🧭</div>
-          <div class="aws-name">Route 53</div>
-          <div class="aws-desc">DNS management</div>
-        </div>
-        <div class="aws-card">
-          <div class="aws-icon">🛡️</div>
-          <div class="aws-name">WAF &amp; Shield</div>
-          <div class="aws-desc">Security &amp; DDoS</div>
-        </div>
-      </div>
-      <div class="aws-marquee-container fade-in">
-        <!-- Dynamic marquee generated by JS -->
+
       </div>
     </div>
   </section>
@@ -434,9 +485,9 @@
         <div class="footer-brand">
           <div class="footer-logo-box">
             <svg viewBox="0 0 86.65 86.65" class="footer-logo-svg">
-              <path fill="#e01e49" d="M43.32,86.65C19.51,86.65.09,67.32,0,43.49-.09,19.6,19.27.09,43.16,0l.05,13.48c-16.46.06-29.8,13.5-29.73,29.96.06,16.42,13.44,29.73,29.85,29.73h.12c7.97-.03,15.46-3.16,21.07-8.82,5.62-5.66,8.69-13.17,8.66-21.14l13.48-.05c.04,11.57-4.42,22.47-12.57,30.68-8.15,8.21-19.01,12.76-30.59,12.81h-.17Z"/>
-              <path fill="#231f20" d="M43.32,70.13c-7.12,0-13.82-2.76-18.88-7.78-5.08-5.04-7.9-11.76-7.92-18.92l13.48-.05c.01,3.56,1.41,6.9,3.94,9.41,2.51,2.5,5.84,3.87,9.38,3.87h.05c3.56-.01,6.9-1.41,9.41-3.94,2.51-2.53,3.88-5.88,3.87-9.44-.03-7.33-6-13.28-13.33-13.28h-.05l-.05-13.48h.1c14.73,0,26.74,11.96,26.8,26.7.03,7.16-2.74,13.9-7.78,18.98-5.04,5.08-11.76,7.89-18.92,7.92h-.11Z"/>
-              <polygon fill="#e01e49" points="86.65 36.41 73.17 36.41 73.17 13.48 49.05 13.48 49.05 0 86.65 0 86.65 36.41"/>
+              <path fill="#15803d" d="M43.32,86.65C19.51,86.65.09,67.32,0,43.49-.09,19.6,19.27.09,43.16,0l.05,13.48c-16.46.06-29.8,13.5-29.73,29.96.06,16.42,13.44,29.73,29.85,29.73h.12c7.97-.03,15.46-3.16,21.07-8.82,5.62-5.66,8.69-13.17,8.66-21.14l13.48-.05c.04,11.57-4.42,22.47-12.57,30.68-8.15,8.21-19.01,12.76-30.59,12.81h-.17Z"/>
+              <path fill="#111827" d="M43.32,70.13c-7.12,0-13.82-2.76-18.88-7.78-5.08-5.04-7.9-11.76-7.92-18.92l13.48-.05c.01,3.56,1.41,6.9,3.94,9.41,2.51,2.5,5.84,3.87,9.38,3.87h.05c3.56-.01,6.9-1.41,9.41-3.94,2.51-2.53,3.88-5.88,3.87-9.44-.03-7.33-6-13.28-13.33-13.28h-.05l-.05-13.48h.1c14.73,0,26.74,11.96,26.8,26.7.03,7.16-2.74,13.9-7.78,18.98-5.04,5.08-11.76,7.89-18.92,7.92h-.11Z"/>
+              <polygon fill="#15803d" points="86.65 36.41 73.17 36.41 73.17 13.48 49.05 13.48 49.05 0 86.65 0 86.65 36.41"/>
             </svg>
           </div>
           <p class="footer-tagline">We filter complexity and deliver simplicity.</p>
@@ -505,84 +556,9 @@
     handleScroll(); // Run on init in case page is reloaded scrolled down
   </script>
 
-  <!-- ─── AWS SERVICES MARQUEE ─── -->
-  <script>
-    (function () {
-      const container = document.querySelector('.aws-marquee-container');
-      const source = document.querySelector('.aws-source-list');
-      if (!container || !source) return;
-
-      const originalCards = Array.from(source.children);
-      let isDesktop = window.innerWidth > 768;
-
-      function render() {
-        container.innerHTML = '';
-        
-        if (isDesktop) {
-          // 1 Row
-          const track = document.createElement('div');
-          track.className = 'aws-track';
-          
-          const group1 = document.createElement('div');
-          group1.className = 'aws-group';
-          originalCards.forEach(card => group1.appendChild(card.cloneNode(true)));
-          
-          const group2 = document.createElement('div');
-          group2.className = 'aws-group';
-          originalCards.forEach(card => group2.appendChild(card.cloneNode(true)));
-          
-          track.appendChild(group1);
-          track.appendChild(group2);
-          container.appendChild(track);
-        } else {
-          // 3 Rows
-          const numRows = 3;
-          const rows = [[], [], []];
-          originalCards.forEach((card, idx) => {
-            rows[idx % numRows].push(card);
-          });
-          
-          rows.forEach((rowCards, rowIndex) => {
-            const track = document.createElement('div');
-            track.className = 'aws-track';
-            if (rowIndex % 2 === 1) {
-              track.classList.add('aws-track-reverse');
-            }
-            
-            const group1 = document.createElement('div');
-            group1.className = 'aws-group';
-            rowCards.forEach(card => group1.appendChild(card.cloneNode(true)));
-            
-            const group2 = document.createElement('div');
-            group2.className = 'aws-group';
-            rowCards.forEach(card => group2.appendChild(card.cloneNode(true)));
-            
-            track.appendChild(group1);
-            track.appendChild(group2);
-            container.appendChild(track);
-          });
-        }
-      }
-
-      render();
-
-      let resizeTimer;
-      window.addEventListener('resize', () => {
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(() => {
-          const currentIsDesktop = window.innerWidth > 768;
-          if (currentIsDesktop !== isDesktop) {
-            isDesktop = currentIsDesktop;
-            render();
-          }
-        }, 200);
-      });
-    })();
-  </script>
-
   <!-- ─── NEON GRID LINES ─── -->
   <script>
-    (function () {
+    if (false) (function () {
       const canvas = document.getElementById('hero-particles');
       const ctx = canvas.getContext('2d');
       const hero = canvas.closest('.hero');
@@ -592,7 +568,7 @@
       const TRAIL = 48;         // trail length (points)
       const FRAME_MS = 33;      // ~30fps cap (lighter on weak GPUs)
       const BASE_SPEED = 0.024; // cells per frame
-      const COLORS = ['#e11d48', '#ff2d75', '#c026d3', '#7c3aed', '#f97316'];
+      const COLORS = ['#15803d', '#16a34a', '#60a5fa', '#fbbf24'];
       const DIRS = [[1, 0], [-1, 0], [0, 1], [0, -1]];
 
       let width, height, cols, rows;
@@ -645,11 +621,10 @@
       }
 
       const COLOR_RGB = {
-        '#e11d48': '225,29,72',
-        '#ff2d75': '255,45,117',
-        '#c026d3': '192,38,211',
-        '#7c3aed': '124,58,237',
-        '#f97316': '249,115,22'
+        '#15803d': '21,128,61',
+        '#16a34a': '22,163,74',
+        '#60a5fa': '96,165,250',
+        '#fbbf24': '251,191,36'
       };
 
       function lightCell(col, row, color, amount) {
