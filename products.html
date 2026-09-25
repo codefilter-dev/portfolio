@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EasyMerge — AI Code Review for GitHub Teams | codeFilter</title>
+  <meta name="description" content="EasyMerge by codeFilter reviews GitHub pull requests automatically, tracks review status across repositories, and surfaces actionable findings in one dashboard." />
+  <link rel="canonical" href="https://codefilter.dev/products.html" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#F1EFE9" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0F0F0E" media="(prefers-color-scheme: dark)" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="codeFilter" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="EasyMerge — AI Code Review for GitHub Teams | codeFilter" />
+  <meta property="og:description" content="EasyMerge by codeFilter reviews GitHub pull requests automatically, tracks review status across repositories, and surfaces actionable findings in one dashboard." />
+  <meta property="og:url" content="https://codefilter.dev/products.html" />
+  <meta property="og:image" content="https://codefilter.dev/images/og-products.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="EasyMerge — AI-powered code review for GitHub teams." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="EasyMerge — AI Code Review for GitHub Teams | codeFilter" />
+  <meta name="twitter:description" content="EasyMerge by codeFilter reviews GitHub pull requests automatically, tracks review status across repositories, and surfaces actionable findings in one dashboard." />
+  <meta name="twitter:image" content="https://codefilter.dev/images/og-products.png" />
+
+  <link rel="icon" href="images/favicon.svg?v=3" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="images/logo-512.png" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "EasyMerge",
+      "url": "https://app.ez-merge.com/",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Web",
+      "description": "AI-powered code review for GitHub teams. EasyMerge connects to GitHub, reviews pull requests automatically, tracks review status across repositories, and surfaces actionable findings in a focused dashboard.",
+      "featureList": [
+        "GitHub App OAuth",
+        "Pull request review flow",
+        "Repository controls",
+        "Live review status"
+      ],
+      "publisher": {
+        "@id": "https://codefilter.dev/#org"
+      },
+      "image": "https://codefilter.dev/images/og-products.png"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://codefilter.dev/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Products",
+          "item": "https://codefilter.dev/products.html"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://codefilter.dev/#org",
+      "name": "codeFilter",
+      "url": "https://codefilter.dev/",
+      "logo": "https://codefilter.dev/images/logo-512.png",
+      "email": "contact@codefilter.dev",
+      "description": "Full-stack product engineering team in Ho Chi Minh City building web products, automation systems, and AWS cloud infrastructure.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ho Chi Minh City",
+        "addressCountry": "VN"
+      },
+      "areaServed": "Worldwide",
+      "knowsAbout": [
+        "Full-stack development",
+        "TypeScript",
+        "Vue 3",
+        "NestJS",
+        "AWS",
+        "Google Cloud",
+        "DevOps",
+        "UI/UX design",
+        "Automation testing"
+      ]
+    }
+  ]
+}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=acid8" />
+  <script>
+    try { if (localStorage.getItem('cf-theme') === 'dark') document.documentElement.dataset.theme = 'dark'; } catch (e) {}
+  </script>
+</head>
+
+<body>
+
+  <!-- ─── HEADER ─── -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="index.html" class="brand" aria-label="codeFilter home">
+        <svg width="26" height="26" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="22" r="13" fill="none" stroke="var(--ink)" stroke-width="7" stroke-dasharray="61.3 20.4"></circle>
+          <circle cx="20" cy="22" r="5.5" fill="var(--accent)"></circle>
+          <rect x="27" y="3" width="10" height="10" fill="var(--accent)"></rect>
+        </svg>
+        <span class="brand-name">codefilter</span>
+      </a>
+      <nav class="nav mono">
+        <div class="nav-pages">
+          <a href="index.html">Home</a>
+          <a href="products.html" class="is-active" aria-current="page">Products</a>
+        </div>
+        <div class="nav-links">
+          <a href="#overview">Overview</a>
+          <a href="#features">Features</a>
+        </div>
+        <div class="nav-actions">
+          <button type="button" class="mode-toggle" id="mode-toggle">☾ Dark</button>
+          <a href="#contact" class="nav-contact">Contact ↘</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ─── PRODUCT HERO ─── -->
+    <section class="bordered">
+      <div class="wrap p-hero-inner">
+        <div class="hero-meta mono">
+          <a href="index.html" class="back-link">← Home / Products</a>
+          <span class="live-dot">Product 01 — Live</span>
+        </div>
+        <h1 class="p-title">EasyMerge</h1>
+        <div class="p-tagline-row">
+          <span class="p-tagline">AI-powered code review for GitHub teams.</span>
+          <div class="hero-cta">
+            <a href="https://app.ez-merge.com/" target="_blank" rel="noopener" class="btn btn-solid">Open App <span class="mono">↗</span></a>
+            <a href="https://docs.ez-merge.com/" target="_blank" rel="noopener" class="btn btn-outline">Read Docs</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap p-overview" id="overview">
+        <div class="p-overview-copy">
+          <span class="eyebrow mono">(01) Overview</span>
+          <p>EasyMerge connects to GitHub, reviews pull requests automatically, tracks review status across repositories,
+            and surfaces actionable findings in a focused dashboard.</p>
+        </div>
+
+        <div class="review" aria-label="EasyMerge review preview">
+          <div class="review-bar mono">
+            <span class="live-dot">EasyMerge Review</span>
+            <span class="review-status">Completed</span>
+          </div>
+          <div class="review-body">
+            <div class="review-pr">
+              <span class="review-repo mono">acme-corp/payments-api</span>
+              <span class="review-title">Add retry logic to Stripe webhook handler</span>
+            </div>
+            <div class="code mono">
+              <div class="code-line"><span>42</span><span>const payload = await request.json()</span></div>
+              <div class="code-line is-hl"><span>43</span><span>await processWebhook(payload)</span></div>
+              <div class="code-line"><span>44</span><span>return { ok: true }</span></div>
+            </div>
+            <div class="finding">
+              <span class="finding-label mono">Finding</span>
+              <span class="finding-text">Missing retry handling can drop webhook events during transient provider errors.</span>
+            </div>
+            <div class="review-foot mono">
+              <span>3 files reviewed</span><span>1 finding</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── FEATURES ─── -->
+    <section id="features" class="bordered">
+      <div class="wrap section split">
+        <div class="split-aside">
+          <span class="eyebrow mono">(02) Features</span>
+          <h2>What's inside</h2>
+        </div>
+        <div class="split-main services features">
+          <div class="service">
+            <span class="service-n mono">F/01</span>
+            <h3 class="service-title">GitHub App OAuth</h3>
+          </div>
+          <div class="service">
+            <span class="service-n mono">F/02</span>
+            <h3 class="service-title">Pull request review flow</h3>
+          </div>
+          <div class="service">
+            <span class="service-n mono">F/03</span>
+            <h3 class="service-title">Repository controls</h3>
+          </div>
+          <div class="service">
+            <span class="service-n mono">F/04</span>
+            <h3 class="service-title">Live review status</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── CONTACT / FOOTER ─── -->
+  <footer id="contact">
+    <div class="wrap footer-inner">
+      <div class="footer-meta mono">
+        <span class="accent-text">(03) Let's build together</span>
+        <span>We filter complexity and deliver simplicity.</span>
+      </div>
+      <a href="mailto:contact@codefilter.dev" class="footer-email">
+        <span class="footer-email-text">contact@codefilter.dev</span>
+        <span class="mono footer-email-arrow">↗</span>
+      </a>
+      <div class="footer-bottom mono">
+        <span>© 2026 codefilter. All rights reserved.</span>
+        <span>Ho Chi Minh City, Vietnam</span>
+        <div class="footer-links">
+          <a href="https://docs.ez-merge.com/" target="_blank" rel="noopener">EasyMerge Docs ↗</a>
+          <a href="index.html">Home ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const root = document.documentElement;
+      const btn = document.getElementById('mode-toggle');
+      function render() {
+        btn.textContent = root.dataset.theme === 'dark' ? '☀ Light' : '☾ Dark';
+      }
+      btn.addEventListener('click', function () {
+        const dark = root.dataset.theme !== 'dark';
+        if (dark) root.dataset.theme = 'dark'; else delete root.dataset.theme;
+        try { localStorage.setItem('cf-theme', dark ? 'dark' : 'light'); } catch (e) {}
+        render();
+      });
+      render();
+    })();
+  </script>
+</body>
+
+</html>

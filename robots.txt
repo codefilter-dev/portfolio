@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /Codefilter%20
+
+Sitemap: https://codefilter.dev/sitemap.xml

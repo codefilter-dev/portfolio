@@ -4,7 +4,7 @@
 
 ### ● Full-Stack · Design · DevOps
 
-📍 Ho Chi Minh City, Vietnam · 🌐 **[View Portfolio](https://codefilter-org.github.io/portfolio/)**
+📍 Ho Chi Minh City, Vietnam · 🌐 **[codefilter.dev](https://codefilter.dev/)**
 
 **We Build. We Deploy. We Scale.**
 
@@ -29,6 +29,7 @@ We also **maintain & support existing projects** — bug fixes, feature upgrades
 | **Ms. Kate** | Manager | Project Management · Stakeholder Communication · Requirement Analysis · Delivery Planning |
 | **Mr. Jack** | UI/UX Designer | UI Design · UX Research · Figma · Prototyping |
 | **Mr. Leo** | Tech Lead & Senior Engineer | Lambda · NestJS · Vue 3 · Docker · CI/CD · AWS · Nginx |
+| **Mr. Ryan** | Tech Lead & Senior Engineer | Node.js · TypeScript · NestJS · Serverless · PostgreSQL · AWS |
 
 ### Engineering Team
 
@@ -61,10 +62,10 @@ We also **maintain & support existing projects** — bug fixes, feature upgrades
 `Vue 3` `Vite` `TypeScript` `Vue Router` `Tailwind CSS`
 
 **DevOps & Infrastructure**
-`Docker` `Terraform` `GitHub Actions` `AWS CDK` `Nginx`
+`Docker` `Terraform` `GitHub Actions` `AWS CDK` `Serverless Framework` `Nginx`
 
 **Databases & Messaging**
-`PostgreSQL (RDS)` `Redis (ElastiCache)` `DynamoDB` `SQS` `SNS` `EventBridge`
+`PostgreSQL (RDS)` `Redis (ElastiCache)` `DynamoDB` `Supabase` `SQS` `SNS` `EventBridge`
 
 ---
 
