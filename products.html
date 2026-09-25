@@ -4,27 +4,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EasyMerge — AI Code Review for GitHub Teams | codeFilter</title>
+  <title>EasyMerge: AI Code Review for GitHub Teams | codeFilter</title>
   <meta name="description" content="EasyMerge by codeFilter reviews GitHub pull requests automatically, tracks review status across repositories, and surfaces actionable findings in one dashboard." />
   <link rel="canonical" href="https://codefilter.dev/products.html" />
-  <meta name="robots" content="index, follow" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="theme-color" content="#F1EFE9" media="(prefers-color-scheme: light)" />
   <meta name="theme-color" content="#0F0F0E" media="(prefers-color-scheme: dark)" />
 
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="codeFilter" />
   <meta property="og:locale" content="en_US" />
-  <meta property="og:title" content="EasyMerge — AI Code Review for GitHub Teams | codeFilter" />
+  <meta property="og:title" content="EasyMerge: AI Code Review for GitHub Teams | codeFilter" />
   <meta property="og:description" content="EasyMerge by codeFilter reviews GitHub pull requests automatically, tracks review status across repositories, and surfaces actionable findings in one dashboard." />
   <meta property="og:url" content="https://codefilter.dev/products.html" />
   <meta property="og:image" content="https://codefilter.dev/images/og-products.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="EasyMerge — AI-powered code review for GitHub teams." />
+  <meta property="og:image:alt" content="EasyMerge: AI-powered code review for GitHub teams." />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="EasyMerge — AI Code Review for GitHub Teams | codeFilter" />
+  <meta name="twitter:title" content="EasyMerge: AI Code Review for GitHub Teams | codeFilter" />
   <meta name="twitter:description" content="EasyMerge by codeFilter reviews GitHub pull requests automatically, tracks review status across repositories, and surfaces actionable findings in one dashboard." />
   <meta name="twitter:image" content="https://codefilter.dev/images/og-products.png" />
+
+  <meta name="twitter:image:alt" content="EasyMerge: AI-powered code review for GitHub teams." />
 
   <link rel="icon" href="images/favicon.svg?v=3" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="images/logo-512.png" />
@@ -48,7 +50,11 @@
       "publisher": {
         "@id": "https://codefilter.dev/#org"
       },
-      "image": "https://codefilter.dev/images/og-products.png"
+      "image": "https://codefilter.dev/images/og-products.png",
+      "@id": "https://codefilter.dev/products.html#easymerge",
+      "mainEntityOfPage": {
+        "@id": "https://codefilter.dev/products.html#webpage"
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -65,7 +71,8 @@
           "name": "Products",
           "item": "https://codefilter.dev/products.html"
         }
-      ]
+      ],
+      "@id": "https://codefilter.dev/products.html#breadcrumb"
     },
     {
       "@type": "Organization",
@@ -92,6 +99,42 @@
         "UI/UX design",
         "Automation testing"
       ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://codefilter.dev/#website",
+      "url": "https://codefilter.dev/",
+      "name": "codeFilter",
+      "publisher": {
+        "@id": "https://codefilter.dev/#org"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://codefilter.dev/products.html#webpage",
+      "url": "https://codefilter.dev/products.html",
+      "name": "EasyMerge: AI Code Review for GitHub Teams | codeFilter",
+      "description": "EasyMerge by codeFilter reviews GitHub pull requests automatically, tracks review status across repositories, and surfaces actionable findings in one dashboard.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://codefilter.dev/#website"
+      },
+      "about": {
+        "@id": "https://codefilter.dev/#org"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://codefilter.dev/images/og-products.png",
+        "width": 1200,
+        "height": 630
+      },
+      "mainEntity": {
+        "@id": "https://codefilter.dev/products.html#easymerge"
+      },
+      "breadcrumb": {
+        "@id": "https://codefilter.dev/products.html#breadcrumb"
+      }
     }
   ]
 }
@@ -112,7 +155,7 @@
   <!-- ─── HEADER ─── -->
   <header class="site-header">
     <div class="wrap header-inner">
-      <a href="index.html" class="brand" aria-label="codeFilter home">
+      <a href="/" class="brand" aria-label="codeFilter home">
         <svg width="26" height="26" viewBox="0 0 40 40" aria-hidden="true">
           <circle cx="20" cy="22" r="13" fill="none" stroke="var(--ink)" stroke-width="7" stroke-dasharray="61.3 20.4"></circle>
           <circle cx="20" cy="22" r="5.5" fill="var(--accent)"></circle>
@@ -122,7 +165,7 @@
       </a>
       <nav class="nav mono">
         <div class="nav-pages">
-          <a href="index.html">Home</a>
+          <a href="/">Home</a>
           <a href="products.html" class="is-active" aria-current="page">Products</a>
         </div>
         <div class="nav-links">
@@ -143,8 +186,8 @@
     <section class="bordered">
       <div class="wrap p-hero-inner">
         <div class="hero-meta mono">
-          <a href="index.html" class="back-link">← Home / Products</a>
-          <span class="live-dot">Product 01 — Live</span>
+          <a href="/" class="back-link">← Home / Products</a>
+          <span class="live-dot">Product 01 · Live</span>
         </div>
         <h1 class="p-title">EasyMerge</h1>
         <div class="p-tagline-row">
@@ -195,24 +238,28 @@
       <div class="wrap section split">
         <div class="split-aside">
           <span class="eyebrow mono">(02) Features</span>
-          <h2>What's inside</h2>
+          <h2>AI Code Review Features</h2>
         </div>
         <div class="split-main services features">
           <div class="service">
             <span class="service-n mono">F/01</span>
             <h3 class="service-title">GitHub App OAuth</h3>
+            <p class="service-desc">Connect EasyMerge to GitHub to bring pull request reviews into your development workflow.</p>
           </div>
           <div class="service">
             <span class="service-n mono">F/02</span>
             <h3 class="service-title">Pull request review flow</h3>
+            <p class="service-desc">Review GitHub pull requests automatically with AI and inspect actionable findings in one dashboard.</p>
           </div>
           <div class="service">
             <span class="service-n mono">F/03</span>
             <h3 class="service-title">Repository controls</h3>
+            <p class="service-desc">Manage the repositories connected to your EasyMerge review workflow.</p>
           </div>
           <div class="service">
             <span class="service-n mono">F/04</span>
             <h3 class="service-title">Live review status</h3>
+            <p class="service-desc">Track review progress across repositories and see when pull request reviews are complete.</p>
           </div>
         </div>
       </div>
@@ -236,7 +283,7 @@
         <span>Ho Chi Minh City, Vietnam</span>
         <div class="footer-links">
           <a href="https://docs.ez-merge.com/" target="_blank" rel="noopener">EasyMerge Docs ↗</a>
-          <a href="index.html">Home ↑</a>
+          <a href="/">Home ↑</a>
         </div>
       </div>
     </div>

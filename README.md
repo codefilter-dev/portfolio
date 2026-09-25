@@ -8,11 +8,11 @@
 
 **We Build. We Deploy. We Scale.**
 
-A passionate team delivering end-to-end software solutions — from UI/UX design and clean Node.js APIs to Vue frontends and fully automated AWS cloud infrastructure.
+A passionate team delivering end-to-end software solutions, from UI/UX design and clean Node.js APIs to Vue frontends and fully automated AWS cloud infrastructure.
 
-We also **maintain & support existing projects** — bug fixes, feature upgrades, refactors, or full handovers. Your codebase is in safe hands.
+We also **maintain & support existing projects**: bug fixes, feature upgrades, refactors, or full handovers. Your codebase is in safe hands.
 
-> 🎨 **Design-only? No problem.** If you only need UI/UX — wireframes, prototypes, or full Figma specs — we've got you covered without any dev work required.
+> 🎨 **Design-only? No problem.** If you only need UI/UX (wireframes, prototypes, or full Figma specs), we've got you covered without any dev work required.
 
 ![Fast](https://img.shields.io/badge/Fast-6366f1?style=flat-square) ![Quality](https://img.shields.io/badge/Quality-059669?style=flat-square) ![Secure](https://img.shields.io/badge/Secure-0284c7?style=flat-square)
 
@@ -46,9 +46,9 @@ We also **maintain & support existing projects** — bug fixes, feature upgrades
 | # | Phase | Description |
 |---|---|---|
 | 01 | **Requirement Gathering** | Listen, align on scope, and define the full picture before any work begins. |
-| 02 | **Design** | Wireframes, Figma mockups, and detailed UI/UX specs — signed off before dev starts. |
+| 02 | **Design** | Wireframes, Figma mockups, and detailed UI/UX specs, signed off before dev starts. |
 | 03 | **Development & Testing** | Build core features with automated tests at every layer. |
-| 04 | **QA & Feedback** | Client reviews on staging — bugs fixed, tweaks applied until it's right. |
+| 04 | **QA & Feedback** | Client reviews on staging: bugs fixed, tweaks applied until it's right. |
 | 05 | **Go Live** | Deploy to production, monitor, and hand over. |
 
 ---
@@ -77,7 +77,7 @@ We also **maintain & support existing projects** — bug fixes, feature upgrades
 
 ## 🧪 Quality Assurance
 
-Every feature ships with confidence — automated and manually verified.
+Every feature ships with confidence, automated and manually verified.
 
 | Type | Coverage |
 |---|---|
