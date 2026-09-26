@@ -53,7 +53,7 @@ body {
 
 a { color: inherit; text-decoration: none; }
 p { margin: 0; }
-h3 { margin: 0; font-size: inherit; font-weight: inherit; }
+h3, h4 { margin: 0; font-size: inherit; font-weight: inherit; }
 img { display: block; }
 
 .wrap { max-width: 1440px; margin: 0 auto; padding-left: var(--gutter); padding-right: var(--gutter); }
@@ -368,6 +368,32 @@ h2 {
 .service-title { margin-top: auto; font-weight: 700; font-stretch: 85%; font-size: 30px; letter-spacing: -0.02em; line-height: 1; }
 .service-desc { font-size: 15px; line-height: 1.55; color: var(--ink2); text-wrap: pretty; }
 
+/* ─── SYSTEMS ─── */
+.systems {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+.system {
+  background: var(--bg);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.system-title { margin-top: 24px; font-weight: 700; font-stretch: 85%; font-size: 30px; letter-spacing: -0.02em; line-height: 1; }
+.system .qa-list { margin-top: auto; }
+.hosting { display: flex; flex-direction: column; gap: 24px; }
+.hosting-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 12px 24px; }
+.hosting-head .system-title { margin-top: 0; }
+.pricing { display: flex; flex-direction: column; gap: 24px; }
+.pricing-note { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px; }
+.pricing-note p { flex: 1 1 320px; max-width: 560px; font-size: 16px; line-height: 1.6; color: var(--ink2); text-wrap: pretty; }
+.text-link { color: var(--accentText); border-bottom: 1px solid currentColor; }
+
 /* ─── PRODUCT BAND ─── */
 .product-band { display: block; background: var(--accent); color: var(--onAccent); }
 
@@ -602,8 +628,11 @@ h2 {
 .features .service { min-height: 200px; }
 
 /* ─── RESPONSIVE ─── */
-@media (max-width: 960px) {
+@media (max-width: 1120px) {
   .nav-links { display: none; }
+}
+
+@media (max-width: 960px) {
   .sticky { position: static; }
   .qa, .qa + .qa { padding-left: 0; padding-right: 0; }
 }
@@ -619,7 +648,7 @@ h2 {
   .mode-toggle { padding: 0 10px; }
   .step-n { width: auto; font-size: 44px; }
   .step-title { font-size: 26px; }
-  .service, .features .service { padding: 24px; min-height: 0; }
+  .service, .features .service, .system { padding: 24px; min-height: 0; }
   .p-overview { padding-bottom: 64px; }
   .review-body { padding: 16px; }
   .footer-inner { padding-top: 64px; }

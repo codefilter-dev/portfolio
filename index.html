@@ -154,7 +154,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=acid8" />
+  <link rel="stylesheet" href="style.css?v=acid11" />
   <script>
     try { if (localStorage.getItem('cf-theme') === 'dark') document.documentElement.dataset.theme = 'dark'; } catch (e) {}
   </script>
@@ -182,6 +182,8 @@
           <a href="#team">Team</a>
           <a href="#process">Process</a>
           <a href="#services">Services</a>
+          <a href="#systems">Systems</a>
+          <a href="#pricing">Pricing</a>
           <a href="#stack">Stack</a>
           <a href="#testing">Testing</a>
         </div>
@@ -415,11 +417,138 @@
       </div>
     </section>
 
+    <!-- ─── SYSTEMS ─── -->
+    <section id="systems" class="bordered">
+      <div class="wrap section stack-v">
+        <div class="section-head">
+          <div class="section-head-title">
+            <span class="eyebrow mono">(04) Track record</span>
+            <h2>Systems We've Built</h2>
+          </div>
+          <p class="lede">The kinds of systems our team has designed, built, and run in production, on your cloud or ours.</p>
+        </div>
+        <div class="systems">
+          <div class="system">
+            <span class="service-n mono">SYS/01</span>
+            <h3 class="system-title">Admin, ERP &amp; CRM</h3>
+            <p class="service-desc">Back-office systems that run day-to-day operations, from customer records and sales pipelines to inventory and reporting.</p>
+            <ul class="qa-list">
+              <li>Role-based admin portals &amp; approval flows</li>
+              <li>Customer, order &amp; inventory management</li>
+              <li>Reporting dashboards &amp; data export</li>
+              <li>Integrations with third-party APIs</li>
+            </ul>
+          </div>
+          <div class="system">
+            <span class="service-n mono">SYS/02</span>
+            <h3 class="system-title">E-commerce &amp; Booking</h3>
+            <p class="service-desc">Customer-facing storefronts and reservation flows, from catalog and checkout to scheduling and order tracking.</p>
+            <ul class="qa-list">
+              <li>Product catalog, cart &amp; checkout</li>
+              <li>Payment gateway integration</li>
+              <li>Availability, scheduling &amp; reservations</li>
+              <li>Order management &amp; notifications</li>
+            </ul>
+          </div>
+          <div class="system">
+            <span class="service-n mono">SYS/03</span>
+            <h3 class="system-title">SaaS Products</h3>
+            <p class="service-desc">Our own SaaS, <a href="products.html" class="text-link">EasyMerge</a>: AI-powered code review for GitHub teams, built and operated end to end.</p>
+            <ul class="qa-list">
+              <li>GitHub App OAuth &amp; webhooks</li>
+              <li>AI pull request review pipeline</li>
+              <li>Live review status across repositories</li>
+              <li>Deployed and operated on AWS</li>
+            </ul>
+          </div>
+        </div>
+        <div class="hosting">
+          <div class="hosting-head">
+            <h3 class="system-title">Your cloud or ours</h3>
+            <p class="service-desc">After launch, you choose where your system runs.</p>
+          </div>
+          <div class="qa-grid">
+            <div class="qa">
+              <div class="qa-top">
+                <h4 class="qa-title">Your Infrastructure</h4>
+                <span class="mono dim">HOST/01</span>
+              </div>
+              <span class="qa-sub mono">Your AWS / GCP account</span>
+              <p>We deploy to your own cloud account, so you own the infrastructure, the data, and the bill. We set it
+                up to keep costs low and help you keep spending under control.</p>
+              <ul class="qa-list">
+                <li>Deployed to your AWS or GCP account</li>
+                <li>Full ownership of data, access &amp; billing</li>
+                <li>Right-sized resources &amp; budget alerts</li>
+                <li>Cost reviews &amp; optimization</li>
+              </ul>
+            </div>
+            <div class="qa">
+              <div class="qa-top">
+                <h4 class="qa-title">Managed Hosting</h4>
+                <span class="mono dim">HOST/02</span>
+              </div>
+              <span class="qa-sub mono">We host &amp; run it for you</span>
+              <p>Don't want to deal with servers? We host the system for you and take care of deployments, monitoring,
+                backups, and uptime, so you can focus on your business.</p>
+              <ul class="qa-list">
+                <li>Hosting, domain &amp; SSL handled</li>
+                <li>Monitoring, backups &amp; security updates</li>
+                <li>Ongoing deployments &amp; fixes</li>
+                <li>Scales as your usage grows</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── PRICING ─── -->
+    <section id="pricing" class="bordered">
+      <div class="wrap section split">
+        <div class="split-aside">
+          <span class="eyebrow mono">(05) Pricing</span>
+          <h2>How We Price Projects</h2>
+          <p class="lede">Pricing for custom software built by our team. EasyMerge subscriptions are separate.</p>
+        </div>
+        <div class="split-main pricing">
+          <div class="systems">
+            <div class="system">
+              <span class="service-n mono">P/01 · One-time</span>
+              <h3 class="system-title">Fixed Project Price</h3>
+              <p class="service-desc">We agree on the scope first, then quote one fixed price for the whole project. No hourly billing and no surprise invoices.</p>
+              <ul class="qa-list">
+                <li>Free quote after a scoping call</li>
+                <li>Price locked to the agreed scope</li>
+                <li>Paid in milestones as work is delivered</li>
+                <li>Scope changes quoted before work starts</li>
+              </ul>
+            </div>
+            <div class="system">
+              <span class="service-n mono">P/02 · Monthly, optional</span>
+              <h3 class="system-title">Maintenance &amp; Hosting</h3>
+              <p class="service-desc">After launch, an optional monthly fee keeps your system running, whether we host it or it runs on your own cloud.</p>
+              <ul class="qa-list">
+                <li>Managed hosting, or support on your cloud</li>
+                <li>Monitoring, backups &amp; security updates</li>
+                <li>Bug fixes &amp; small improvements</li>
+                <li>Priced by system size &amp; support level</li>
+              </ul>
+            </div>
+          </div>
+          <div class="pricing-note">
+            <p>Every quote is based on your scope, so there's no one-size price list. Tell us what you need and we'll send a free, detailed estimate.</p>
+            <a href="#contact" class="btn btn-solid">Get a Free Quote <span class="mono">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ─── PRODUCT BAND ─── -->
     <a id="product" href="products.html" class="product-band">
       <div class="wrap product-inner">
         <div class="product-copy">
-          <span class="mono eyebrow-plain">(04) Product · Live</span>
+          <span class="mono eyebrow-plain">(06) Product · Live</span>
           <span class="product-name">EasyMerge</span>
           <span class="product-lede">AI-powered code review for GitHub teams.</span>
         </div>
@@ -431,7 +560,7 @@
     <section id="stack" class="bordered">
       <div class="wrap section split">
         <div class="split-aside sticky">
-          <span class="eyebrow mono">(05) Tools of the trade</span>
+          <span class="eyebrow mono">(07) Tools of the trade</span>
           <h2>Tech Stack</h2>
           <p class="lede">Full-stack, cloud-native, and battle-tested.</p>
         </div>
@@ -481,7 +610,7 @@
       <div class="wrap section stack-v">
         <div class="section-head">
           <div class="section-head-title">
-            <span class="eyebrow mono">(06) Quality assurance</span>
+            <span class="eyebrow mono">(08) Quality assurance</span>
             <h2>Quality Assurance</h2>
           </div>
           <p class="lede">Every feature ships with confidence, automated and manually verified.</p>
@@ -527,7 +656,7 @@
   <footer id="contact">
     <div class="wrap footer-inner">
       <div class="footer-meta mono">
-        <span class="accent-text">(07) Let's build together</span>
+        <span class="accent-text">(09) Let's build together</span>
         <span>We filter complexity and deliver simplicity.</span>
       </div>
       <a href="mailto:contact@codefilter.dev" class="footer-email">
