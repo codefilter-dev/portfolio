@@ -579,6 +579,7 @@ h2 {
   line-height: 0.8;
   letter-spacing: -0.04em;
 }
+.products-title { font-size: clamp(72px, 14vw, 230px); }
 
 .p-tagline-row {
   display: flex;
@@ -594,6 +595,20 @@ h2 {
 .p-overview { padding-top: 56px; padding-bottom: 96px; display: flex; flex-wrap: wrap; gap: 48px 64px; }
 .p-overview-copy { flex: 1 1 300px; display: flex; flex-direction: column; gap: 24px; }
 .p-overview-copy p { max-width: 440px; font-size: 20px; line-height: 1.5; text-wrap: pretty; }
+.p-overview-copy h2 { font-size: clamp(52px, 6vw, 88px); }
+.product-tagline { max-width: 460px; font-size: 24px; font-weight: 700; font-stretch: 88%; letter-spacing: -0.02em; line-height: 1.1; }
+
+/* EasyTrace brand: matches the product dashboard's violet accent. */
+.easytrace-detail {
+  --accent: #7c3aed;
+  --accentText: #6d28d9;
+  --hl: rgba(124, 58, 237, 0.12);
+}
+:root[data-theme="dark"] .easytrace-detail {
+  --accent: #9b8cff;
+  --accentText: #b9afff;
+  --hl: rgba(155, 140, 255, 0.16);
+}
 
 .review { flex: 1.6 1 520px; min-width: 0; border: 1px solid var(--line2); background: var(--panel); }
 .review-bar {
@@ -626,6 +641,12 @@ h2 {
 
 .review-foot { display: flex; justify-content: space-between; font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--ink3); }
 
+.trace-preview { align-self: stretch; }
+.trace-stats { display: grid; grid-template-columns: repeat(3, 1fr); border: 1px solid var(--line); }
+.trace-stats span { display: flex; flex-direction: column; gap: 6px; padding: 14px; color: var(--ink3); font-size: 11px; text-transform: uppercase; }
+.trace-stats span + span { border-left: 1px solid var(--line); }
+.trace-stats strong { color: var(--ink); font-size: 18px; font-weight: 500; letter-spacing: -0.04em; }
+
 .features .service { min-height: 200px; }
 
 /* ─── RESPONSIVE ─── */
@@ -652,6 +673,7 @@ h2 {
   .service, .features .service, .system { padding: 24px; min-height: 0; }
   .p-overview { padding-bottom: 64px; }
   .review-body { padding: 16px; }
+  .trace-stats span { padding: 10px; }
   .footer-inner { padding-top: 64px; }
   .footer-email-text { font-size: 10vw; }
   .p-title { font-size: 18vw; }

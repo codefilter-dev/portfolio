@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EasyMerge: AI Code Review for GitHub Teams | codeFilter</title>
-  <meta name="description" content="EasyMerge by codeFilter reviews GitHub pull requests automatically, tracks review status across repositories, and surfaces actionable findings in one dashboard." />
+  <title>Products: EasyMerge & EasyTrace | codeFilter</title>
+  <meta name="description" content="Explore EasyMerge, AI-powered GitHub code review, and EasyTrace, test-report and coverage intelligence for engineering teams." />
   <link rel="canonical" href="https://codefilter.dev/products.html" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="theme-color" content="#F1EFE9" media="(prefers-color-scheme: light)" />
@@ -14,19 +14,19 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="codeFilter" />
   <meta property="og:locale" content="en_US" />
-  <meta property="og:title" content="EasyMerge: AI Code Review for GitHub Teams | codeFilter" />
-  <meta property="og:description" content="EasyMerge by codeFilter reviews GitHub pull requests automatically, tracks review status across repositories, and surfaces actionable findings in one dashboard." />
+  <meta property="og:title" content="EasyMerge & EasyTrace | codeFilter Products" />
+  <meta property="og:description" content="AI-powered code review plus test-report and coverage intelligence for engineering teams." />
   <meta property="og:url" content="https://codefilter.dev/products.html" />
   <meta property="og:image" content="https://codefilter.dev/images/og-products.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="EasyMerge: AI-powered code review for GitHub teams." />
+  <meta property="og:image:alt" content="codeFilter products: EasyMerge and EasyTrace." />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="EasyMerge: AI Code Review for GitHub Teams | codeFilter" />
-  <meta name="twitter:description" content="EasyMerge by codeFilter reviews GitHub pull requests automatically, tracks review status across repositories, and surfaces actionable findings in one dashboard." />
+  <meta name="twitter:title" content="EasyMerge & EasyTrace | codeFilter Products" />
+  <meta name="twitter:description" content="AI-powered code review plus test-report and coverage intelligence for engineering teams." />
   <meta name="twitter:image" content="https://codefilter.dev/images/og-products.png" />
 
-  <meta name="twitter:image:alt" content="EasyMerge: AI-powered code review for GitHub teams." />
+  <meta name="twitter:image:alt" content="codeFilter products: EasyMerge and EasyTrace." />
 
   <link rel="icon" href="images/favicon.svg?v=3" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="images/logo-512.png" />
@@ -47,11 +47,34 @@
         "Repository controls",
         "Live review status"
       ],
+      "releaseNotes": "Public beta begins November 9, 2026.",
       "publisher": {
         "@id": "https://codefilter.dev/#org"
       },
       "image": "https://codefilter.dev/images/og-products.png",
       "@id": "https://codefilter.dev/products.html#easymerge",
+      "mainEntityOfPage": {
+        "@id": "https://codefilter.dev/products.html#webpage"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "EasyTrace",
+      "url": "https://codefilter.dev/products.html#easytrace",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Web",
+      "description": "Test-report and coverage intelligence for engineering teams. EasyTrace receives CI test reports from Vitest, Jest, Playwright, and Cypress, then makes runs, failures, and coverage easy to explore.",
+      "featureList": [
+        "Test result uploads via CLI",
+        "Vitest, Jest, Playwright, and Cypress support",
+        "Coverage reporting",
+        "CI test-run analytics"
+      ],
+      "releaseNotes": "Releasing November 9, 2026.",
+      "publisher": {
+        "@id": "https://codefilter.dev/#org"
+      },
+      "@id": "https://codefilter.dev/products.html#easytrace",
       "mainEntityOfPage": {
         "@id": "https://codefilter.dev/products.html#webpage"
       }
@@ -116,8 +139,8 @@
       "@type": "WebPage",
       "@id": "https://codefilter.dev/products.html#webpage",
       "url": "https://codefilter.dev/products.html",
-      "name": "EasyMerge: AI Code Review for GitHub Teams | codeFilter",
-      "description": "EasyMerge by codeFilter reviews GitHub pull requests automatically, tracks review status across repositories, and surfaces actionable findings in one dashboard.",
+      "name": "EasyMerge & EasyTrace | codeFilter Products",
+      "description": "EasyMerge provides AI-powered GitHub code review, while EasyTrace brings test-report and coverage intelligence into one dashboard.",
       "inLanguage": "en",
       "isPartOf": {
         "@id": "https://codefilter.dev/#website"
@@ -131,9 +154,10 @@
         "width": 1200,
         "height": 630
       },
-      "mainEntity": {
-        "@id": "https://codefilter.dev/products.html#easymerge"
-      },
+      "mainEntity": [
+        { "@id": "https://codefilter.dev/products.html#easymerge" },
+        { "@id": "https://codefilter.dev/products.html#easytrace" }
+      ],
       "breadcrumb": {
         "@id": "https://codefilter.dev/products.html#breadcrumb"
       }
@@ -171,8 +195,8 @@
           <a href="products.html" class="is-active" aria-current="page">Products</a>
         </div>
         <div class="nav-links">
-          <a href="#overview">Overview</a>
-          <a href="#features">Features</a>
+          <a href="#easymerge">EasyMerge</a>
+          <a href="#easytrace">EasyTrace</a>
         </div>
         <div class="nav-actions">
           <button type="button" class="mode-toggle" id="mode-toggle">☾ Dark</button>
@@ -184,27 +208,32 @@
 
   <main>
 
-    <!-- ─── PRODUCT HERO ─── -->
+    <!-- ─── PRODUCTS HERO ─── -->
     <section class="bordered">
       <div class="wrap p-hero-inner">
         <div class="hero-meta mono">
           <a href="/" class="back-link">← Home / Products</a>
-          <span class="live-dot">Product 01 · Coming Soon</span>
+          <span class="live-dot">Two products · Arriving <time datetime="2026-11-09">Nov 9</time></span>
         </div>
-        <h1 class="p-title">EasyMerge</h1>
+        <h1 class="p-title products-title">Products</h1>
         <div class="p-tagline-row">
-          <span class="p-tagline">AI-powered code review for GitHub teams.</span>
-          <div class="hero-cta">
-            <span class="btn btn-soon" aria-disabled="true">Coming Soon</span>
-          </div>
+          <span class="p-tagline">Tools for clearer, more confident engineering decisions.</span>
         </div>
       </div>
+    </section>
 
+    <!-- ─── EASYMERGE ─── -->
+    <section id="easymerge" class="bordered product-detail">
       <div class="wrap p-overview" id="overview">
         <div class="p-overview-copy">
-          <span class="eyebrow mono">(01) Overview</span>
+          <span class="eyebrow mono">(01) Public beta · Nov 9</span>
+          <h2>EasyMerge</h2>
+          <span class="product-tagline">AI-powered code review for GitHub teams.</span>
           <p>EasyMerge connects to GitHub, reviews pull requests automatically, tracks review status across repositories,
             and surfaces actionable findings in a focused dashboard.</p>
+          <div class="hero-cta">
+            <span class="btn btn-soon" aria-disabled="true">Public beta · Nov 9</span>
+          </div>
         </div>
 
         <div class="review" aria-label="EasyMerge review preview">
@@ -234,33 +263,41 @@
       </div>
     </section>
 
-    <!-- ─── FEATURES ─── -->
-    <section id="features" class="bordered">
-      <div class="wrap section split">
-        <div class="split-aside">
-          <span class="eyebrow mono">(02) Features</span>
-          <h2>AI Code Review Features</h2>
+    <!-- ─── EASYTRACE ─── -->
+    <section id="easytrace" class="bordered product-detail easytrace-detail">
+      <div class="wrap p-overview">
+        <div class="p-overview-copy">
+          <span class="eyebrow mono">(02) Release · Nov 9</span>
+          <h2>EasyTrace</h2>
+          <span class="product-tagline">Test-report and coverage intelligence for engineering teams.</span>
+          <p>Bring every CI run into focus: upload reports, trace failures, and understand coverage in one dashboard.</p>
+          <div class="hero-cta">
+            <span class="btn btn-soon" aria-disabled="true">Release · Nov 9</span>
+          </div>
         </div>
-        <div class="split-main services features">
-          <div class="service">
-            <span class="service-n mono">F/01</span>
-            <h3 class="service-title">GitHub App OAuth</h3>
-            <p class="service-desc">Connect EasyMerge to GitHub to bring pull request reviews into your development workflow.</p>
+
+        <div class="review trace-preview" aria-label="EasyTrace test run preview">
+          <div class="review-bar mono">
+            <span class="live-dot">EasyTrace Run</span>
+            <span class="review-status">Passed</span>
           </div>
-          <div class="service">
-            <span class="service-n mono">F/02</span>
-            <h3 class="service-title">Pull request review flow</h3>
-            <p class="service-desc">Review GitHub pull requests automatically with AI and inspect actionable findings in one dashboard.</p>
-          </div>
-          <div class="service">
-            <span class="service-n mono">F/03</span>
-            <h3 class="service-title">Repository controls</h3>
-            <p class="service-desc">Manage the repositories connected to your EasyMerge review workflow.</p>
-          </div>
-          <div class="service">
-            <span class="service-n mono">F/04</span>
-            <h3 class="service-title">Live review status</h3>
-            <p class="service-desc">Track review progress across repositories and see when pull request reviews are complete.</p>
+          <div class="review-body">
+            <div class="review-pr">
+              <span class="review-repo mono">acme-corp/storefront · ci #482</span>
+              <span class="review-title">Test results and coverage, in context.</span>
+            </div>
+            <div class="trace-stats mono">
+              <span><strong>248</strong> tests</span>
+              <span><strong>96.4%</strong> coverage</span>
+              <span><strong>4m 18s</strong> duration</span>
+            </div>
+            <div class="finding">
+              <span class="finding-label mono">Connect</span>
+              <span class="finding-text">Upload reports from Vitest, Jest, Playwright, or Cypress with the EasyTrace CLI.</span>
+            </div>
+            <div class="review-foot mono">
+              <span>Runs · failures · coverage</span><span>CI-ready</span>
+            </div>
           </div>
         </div>
       </div>
