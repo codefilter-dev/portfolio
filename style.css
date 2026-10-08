@@ -1,5 +1,7 @@
 /* ─── TOKENS (Acid accent) ─── */
 :root {
+  /* Keep the established visual system, with a slightly more compact overall scale. */
+  --ui-scale: 0.96;
   --bg: #F1EFE9;
   --bg2: #E8E5DD;
   --panel: #F8F7F3;
@@ -44,6 +46,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 64px; }
 
 body {
   margin: 0;
+  zoom: var(--ui-scale);
   background: var(--bg);
   color: var(--ink);
   font-family: var(--fs);
@@ -71,7 +74,7 @@ h1, h2 {
 }
 
 h2 {
-  font-size: clamp(44px, 5vw, 76px);
+  font-size: clamp(38px, 4.35vw, 66px);
   line-height: 0.9;
   letter-spacing: -0.03em;
 }
@@ -177,7 +180,7 @@ h2 {
 }
 
 .hero-title {
-  font-size: clamp(48px, min(8vw, 14.5vh), 136px);
+  font-size: clamp(42px, min(7vw, 12.7vh), 118px);
   line-height: 0.9;
   letter-spacing: -0.035em;
   text-wrap: balance;
@@ -412,7 +415,7 @@ h2 {
 .product-name {
   font-weight: 800;
   font-stretch: 78%;
-  font-size: clamp(56px, 8vw, 128px);
+  font-size: clamp(49px, 7vw, 112px);
   line-height: 0.85;
   letter-spacing: -0.035em;
   text-transform: uppercase;
@@ -529,7 +532,7 @@ h2 {
 .footer-email-text {
   font-weight: 800;
   font-stretch: 72%;
-  font-size: clamp(44px, 8.6vw, 148px);
+  font-size: clamp(39px, 7.5vw, 130px);
   line-height: 0.85;
   letter-spacing: -0.035em;
   word-break: break-word;
@@ -575,11 +578,11 @@ h2 {
 
 .p-title {
   font-stretch: 72%;
-  font-size: clamp(80px, 17vw, 280px);
+  font-size: clamp(70px, 14.9vw, 246px);
   line-height: 0.8;
   letter-spacing: -0.04em;
 }
-.products-title { font-size: clamp(72px, 14vw, 230px); }
+.products-title { font-size: clamp(63px, 12.25vw, 202px); }
 
 .p-tagline-row {
   display: flex;
@@ -595,7 +598,7 @@ h2 {
 .p-overview { padding-top: 56px; padding-bottom: 96px; display: flex; flex-wrap: wrap; gap: 48px 64px; }
 .p-overview-copy { flex: 1 1 300px; display: flex; flex-direction: column; gap: 24px; }
 .p-overview-copy p { max-width: 440px; font-size: 20px; line-height: 1.5; text-wrap: pretty; }
-.p-overview-copy h2 { font-size: clamp(52px, 6vw, 88px); }
+.p-overview-copy h2 { font-size: clamp(46px, 5.25vw, 77px); }
 .product-tagline { max-width: 460px; font-size: 24px; font-weight: 700; font-stretch: 88%; letter-spacing: -0.02em; line-height: 1.1; }
 
 /* EasyTrace brand: matches the product dashboard's violet accent. */
