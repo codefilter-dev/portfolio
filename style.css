@@ -398,8 +398,11 @@ h2 {
 .pricing-note p { flex: 1 1 320px; max-width: 560px; font-size: 16px; line-height: 1.6; color: var(--ink2); text-wrap: pretty; }
 .text-link { color: var(--accentText); border-bottom: 1px solid currentColor; }
 
-/* ─── PRODUCT BAND ─── */
+/* ─── PRODUCT SHOWCASE ─── */
+.product-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .product-band { display: block; background: var(--accent); color: var(--onAccent); }
+.product-band--merge { --product-accent: #1FCB6E; --product-on-accent: #0B0B0B; background: var(--product-accent); color: var(--product-on-accent); }
+.product-band--trace { --product-accent: #7A2A8C; --product-on-accent: #FFFFFF; background: var(--product-accent); color: var(--product-on-accent); }
 
 .product-inner {
   padding-top: 48px;
@@ -427,11 +430,11 @@ h2 {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   padding: 14px 18px;
-  border: 1px solid var(--onAccent);
+  border: 1px solid var(--product-on-accent, var(--onAccent));
   white-space: nowrap;
   transition: background .15s, color .15s;
 }
-.product-band:hover .product-cta { background: var(--onAccent); color: var(--accent); }
+.product-band:hover .product-cta { background: var(--product-on-accent, var(--onAccent)); color: var(--product-accent, var(--accent)); }
 
 /* ─── STACK ─── */
 .stack-row {
@@ -601,16 +604,16 @@ h2 {
 .p-overview-copy h2 { font-size: clamp(46px, 5.25vw, 77px); }
 .product-tagline { max-width: 460px; font-size: 24px; font-weight: 700; font-stretch: 88%; letter-spacing: -0.02em; line-height: 1.1; }
 
-/* EasyTrace brand: matches the product dashboard's violet accent. */
+/* EasyTrace brand: matches the EasyTrace Docs logo. */
 .easytrace-detail {
-  --accent: #7c3aed;
-  --accentText: #6d28d9;
-  --hl: rgba(124, 58, 237, 0.12);
+  --accent: #7A2A8C;
+  --accentText: #7A2A8C;
+  --hl: rgba(122, 42, 140, 0.12);
 }
 :root[data-theme="dark"] .easytrace-detail {
-  --accent: #9b8cff;
-  --accentText: #b9afff;
-  --hl: rgba(155, 140, 255, 0.16);
+  --accent: #D08AE0;
+  --accentText: #D08AE0;
+  --hl: rgba(208, 138, 224, 0.16);
 }
 
 .review { flex: 1.6 1 520px; min-width: 0; border: 1px solid var(--line2); background: var(--panel); }
@@ -660,6 +663,7 @@ h2 {
 @media (max-width: 960px) {
   .sticky { position: static; }
   .qa, .qa + .qa { padding-left: 0; padding-right: 0; }
+  .product-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 600px) {
