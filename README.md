@@ -29,7 +29,6 @@ We also **maintain & support existing projects**: bug fixes, feature upgrades, r
 | **Ms. Kate** | Manager | Project Management · Stakeholder Communication · Requirement Analysis · Delivery Planning |
 | **Mr. Jack** | UI/UX Designer | UI Design · UX Research · Figma · Prototyping |
 | **Mr. Leo** | Tech Lead & Senior Engineer | Lambda · NestJS · Vue 3 · Docker · CI/CD · AWS · Nginx |
-| **Mr. Ryan** | Tech Lead & Senior Engineer | Node.js · TypeScript · NestJS · Serverless · PostgreSQL · AWS |
 
 ### Engineering Team
 
